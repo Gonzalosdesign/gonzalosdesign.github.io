@@ -155,7 +155,7 @@ h1, h2, h3 {
 
 .topnav {
     overflow: hidden;
-    background-color: #171C26;
+    background: rgb(10, 10, 10);
   }
 
   .topnav a {
@@ -183,7 +183,7 @@ h1, h2, h3 {
     .topnav a.icon {
       float: right;
       display: block;
-      background-color: #171C26;
+      background: rgb(10, 10, 10);
     } 
   }
 
@@ -201,45 +201,6 @@ h1, h2, h3 {
     }
   }
 
-/*----- S L I D E  S H O W -------------------------------------
-----------------------------------------------------------------
-----------------------------------------------------------------
-----------------------------------------------------------------*/
-
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 100%;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4;} 
-  to {opacity: 1;}
-}
-
-
-
-
 
 /*---- I N I C I O --------------------------------*/
 /*-------------------------------------------------*/
@@ -251,6 +212,9 @@ h1, h2, h3 {
 }
 
 
+h3 {
+  text-align: center;
+}
 
 
 /* MOBILE FIRST: */
@@ -292,6 +256,9 @@ h1, h2, h3 {
     font-size: 150%;
     padding: 0;
     margin: 2% 20%;}
+
+h1 {
+    margin: 2% 10%;}
 }
 
 
@@ -312,8 +279,8 @@ h1, h2, h3 {
 	margin: auto;
 	margin-top: 10%;
 	margin-bottom: 20%;
-	background: rgba(19, 23, 26, 0.4);
-  border: 0.1px solid #C77614;
+	background: rgba(10, 10, 10, 0.6);
+  border: 0.1px solid white;
 }
 
 .carta h3, .carta p {
@@ -333,7 +300,14 @@ h1, h2, h3 {
 ----------------------------------------------------------------
 ----------------------------------------------------------------*/
 
+.gallery {
+  background: rgba(10, 10, 10, 0.6);
+  color: white;
+}
 
+.gallery:hover {
+  background-color: black;
+}
 
 /*MOBILE FIRST*/
 
@@ -350,8 +324,8 @@ h2 {
   margin: auto;
   margin-top: 5%;
   margin-bottom: 5%;
-  background: rgba(19, 23, 26, 0.6);
-  border: 0.1px solid #C77614;
+  background: rgba(10, 10, 10, 0.6);
+  border: 0.1px solid white;
 }
 
 /*FOR DESKTOP*/
@@ -388,6 +362,7 @@ div.gallery img {
 
 .rezising {
   padding: 0 6px;
+  margin-top: 1%;
   float: left;
   width: 24.99999%;
 }
@@ -412,7 +387,24 @@ div.gallery img {
   clear: both;
 }
 
+/*MODAL RULES --------------------------------------------------*/
 
+.w3-modal header h3 {
+
+}
+.description p {
+
+  color: white;
+}
+
+.w3-card-4 {
+  padding: 2%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background: rgba(10, 10, 10, 0.8);
+  border: 0.1px solid white;
+}
 
 /*----- F O O T E R --------------------------------------------
 ----------------------------------------------------------------
@@ -422,7 +414,7 @@ div.gallery img {
 .footer {
 	padding: 5%;
 	text-align: center;
-	background-color: #171C26;
+	background: rgb(10, 10, 10);
 }
 
 .footer h3 {
@@ -431,11 +423,6 @@ div.gallery img {
 
 .footer img {
 	margin: 2%;
-	width: auto;
-}
-
-.footer img:hover {
-	opacity: 0.5;
 }
 
 /*ICONOS DE REDES SOCIALES--------------------------------------*/
@@ -450,5 +437,5 @@ div.gallery img {
 }
 
 .fa:hover {
-	color: #C77614;
+	color: #D9487D;
 }
