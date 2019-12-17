@@ -1,0 +1,214 @@
+/*Fuente*/
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap');
+
+/*Grilla*/
+
+
+*{box-sizing: border-box; border:}
+
+.row::after {content: ""; clear: both; display: table;}
+
+[class*="col-"] {float: left; padding: 10px;}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/*Sitio*/
+
+
+
+body {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+     }
+
+p {
+    text-align: left;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    padding: 15px
+}
+
+a {
+    font-size: 30px;
+    background-color: #33E897;
+    color: black;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    width: 100px;
+    border: 5px solid #393185;
+    padding: 10px;
+    margin: 10px;
+ }
+
+h1 {
+    color: #EF6C00;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+h2 {
+    color: #5C33E8;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    color: #5C33E8;
+    text-align: center;
+    font-size: 20px;
+ }
+
+
+
+.titulo {
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.ley {
+    top: 500px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#banner1, #banner2 {height: 320px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+#banner2 {
+        background-image: url(img/cianobacterias11.jpg);
+}
+
+#banner1 {
+    background-image: url(img/cianobacterias2.jpg);
+}
+
+#mapa {
+    height: 750px;
+    background-image: url(img/mapa.png);
+}
+
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #33E897;
+    width: 100%;
+  	background-color: #393185;
+  	text-align: center;
+}
+
+.popup {
+    background-image: url(img/popup.gif);
+    height: 800px;
+    width: 100%;
+}
+
+.popuph1 {
+    padding-top: 300px;
+    -webkit-animation-name: popuph1; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 14s; /* Safari 4.0 - 8.0*/
+    animation-name: popuph1;
+    animation-duration: 14s;
+}
+
+/* Safari 4.0 - 8.0*/
+@-webkit-keyframes popuph1 {
+
+    0%   {visibility: hidden;}
+    25%  {visibility: hidden;}
+    50%  {visibility: hidden;}
+    75%  {visibility: hidden;}
+    99%  {visibility: hidden;}
+    100% {visibility: visible;}
+}
+
+/* Standard syntax*/
+@keyframes popuph1 {
+    0%   {visibility: hidden;}
+    25%  {visibility: hidden;}
+    50%  {visibility: hidden;}
+    75%  {visibility: hidden;}
+    99%  {visibility: hidden;}
+    100% {visibility: visible;}
+}
+
+#info {
+    -webkit-animation-name: info; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 16s; /* Safari 4.0 - 8.0*/
+    animation-name: info;
+    animation-duration: 16s;
+}
+
+/* Safari 4.0 - 8.0*/
+@-webkit-keyframes info {
+
+    0%   {visibility: hidden;}
+    25%  {visibility: hidden;}
+    50%  {visibility: hidden;}
+    75%  {visibility: hidden;}
+    99%  {visibility: hidden;}
+    100% {visibility: visible;}
+}
+
+/* Standard syntax*/
+@keyframes info {
+    0%   {visibility: hidden;}
+    25%  {visibility: hidden;}
+    50%  {visibility: hidden;}
+    75%  {visibility: hidden;}
+    99%  {visibility: hidden;}
+    100% {visibility: visible;}
+}
+
+
+#ganaste {
+    -webkit-animation-name: ganaste; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 27s; /* Safari 4.0 - 8.0*/
+    animation-name: ganaste;
+    animation-duration: 27s;
+}
+
+
+/* Safari 4.0 - 8.0*/
+@-webkit-keyframes ganaste {
+
+    0%   {visibility: hidden;}
+    25%  {visibility: hidden;}
+    50%  {visibility: hidden;}
+    75%  {visibility: hidden;}
+    99%  {visibility: hidden;}
+    100% {visibility: visible;}
+}
+
+/* Standard syntax*/
+@keyframes ganaste {
+    0%   {visibility: hidden;}
+    25%  {visibility: hidden;}
+    50%  {visibility: hidden;}
+    75%  {visibility: hidden;}
+    99%  {visibility: hidden;}
+    100% {visibility: visible;}
+}

@@ -1,0 +1,745 @@
+/* Enlace API de Google Fonts con CSS para que aplique tipografía a todas las páginas del sitio */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/* Sistema de grilla ____________________________________ */
+
+* {box-sizing: border-box;}
+
+.row::after {content: ""; clear: both; display: table;}
+
+[class*="col-"] {float: left;}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+/* For mobile phones: */
+  [class*="col-"] {
+  width: 100%;}
+}
+
+/* Estilo general para todo el sitio ___________________ */
+
+html, body {
+  scroll-behavior: smooth;
+  height: 100%;
+  margin: 0;
+  background-color: #EDEAF1; /* aplica color al fondo de todo el sitio */
+  color: #60574F; /* aplica color a la tipografía de todo el sitio salvo en los casos que mas abajo sobre-escribiremos */
+  font-family: 'Open Sans', sans-serif; /* aplica la tipografía a todos los textos del sitio */
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.full-height{
+  height: 100%;
+}
+
+/* Estilo index ________________________________________ */
+
+.feria {
+  background-image: url("gif/feria.gif");
+  height: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: infinite;
+}
+
+.flecha {
+  position: absolute;
+  left: 43%;
+  top: 35%;
+}
+
+.flecha:hover { /* indica entrar */
+  position: absolute;
+  -webkit-animation-name: flecha; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.2s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+  -webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
+  animation-name: flecha;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes flecha {
+  from {top: 35%;}
+  to {top: 45%;}
+}
+
+/* Standard syntax */
+@keyframes flecha {
+  from {top: 35%;}
+  to {top: 45%;}
+}
+
+/* Estilo elección 1 ________________________________________ */
+
+.fondo2 {
+  background-image: url("img/fondo2.png");
+  height: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.aparece1 { /* para encabezados en elección 1 y "¡Acertaste!" en acertaste*/
+  -webkit-animation-name: aparece1;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: aparece1;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes aparece1 {
+  0% {  opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes aparece1 {
+  0% {  opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.cual {
+  margin: 35%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  text-align: center;
+  font-size: 300%;
+}
+
+.prod {
+  margin: 27%;
+  margin-top: 1%;
+  margin-bottom: 0%;
+  text-align: center;
+}
+
+.chaqueta1 {
+  position: absolute;
+  top: 37%;
+  left: 16%;
+}
+
+.chaqueta2 {
+  position: absolute;
+  top: 37%;
+  left: 60%;
+}
+
+.etiqueta1, .etiqueta2 {
+  position: absolute;
+  width: 30%;
+  right: 89%;
+  top: 65%;
+}
+
+/* Estilo elección 2 ________________________________________ */
+
+.fondo3 {
+  background-image: url("img/fondo3.png");
+    height: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+.nuevaeleccion {
+  margin-top: 2%;
+  font-size: 250%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.chaqueta1sitio3 {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.chaqueta2sitio3 {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+
+.chaquetasegundamano {
+  position: absolute;
+  top: 30%;
+  left: 70%;
+}
+
+.etiqueta1sitio3, .etiqueta2sitio3, .etiqueta3sitio3 {
+  position: absolute;
+  width: 50%;
+  top: 60%;
+  right: 84%;
+}
+
+/* Estilo Consecuencia 1_______________________________ */
+
+.info1 {
+  font-size: 187%;
+  text-align: center;
+}
+
+.info2 {
+  font-weight: bold;
+  font-size: 187%;
+  text-align: center;
+}
+
+#container {
+  position: relative;
+}
+
+.papelera {
+  position: absolute;
+  z-index: 1;
+  width: 25%;
+  left: 37%;
+  top: 25%;
+}
+
+.bienhecho {
+  opacity: 0;
+  left: 35%;
+  position: absolute;
+  z-index: 2;
+  font-size: 437%;
+  font-weight: bold;
+  color: #6696C3;
+  text-align: center;
+  transition: opacity 0.5s linear;
+ -webkit-transition:  opacity 0.5s linear;
+}
+
+.bienhecho.visible {
+  opacity: 1;
+}
+
+#desecho1 {
+  position: absolute;
+  z-index: 2;
+  -webkit-animation-name: desecho1; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  -webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
+  animation-name: desecho1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  cursor: grab;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes desecho1 {
+  0%   {left:0%; top:0%;}
+  25%  {left:40%; top:0%;}
+  50%  {left:40%; top:50%;}
+  75%  {left:0%; top:50%;}
+  100% {left:0%; top:0%;}
+}
+
+/* Standard syntax */
+@keyframes desecho1 {
+  0%   {left:0%; top:0%;}
+  25%  {left:40%; top:0%;}
+  50%  {left:40%; top:50%;}
+  75%  {left:0%; top:50%;}
+  100% {left:0%; top:0%;}
+}
+
+#desecho2 {
+  position: absolute;
+  z-index: 3;
+  -webkit-animation-name: desecho2; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  -webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
+  animation-name: desecho2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  cursor: grab;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes desecho2 {
+  0%   {left:0%; top:0%;}
+  25%  {left:40%; top:0%;}
+  50%  {left:40%; top:50%;}
+  75%  {left:0%; top:50%;}
+  100% {left:0%; top:0%;}
+}
+
+/* Standard syntax */
+@keyframes desecho2 {
+  0%   {left:0%; top:0%;}
+  25%  {left:40%; top:0%;}
+  50%  {left:40%; top:50%;}
+  75%  {left:0%; top:50%;}
+  100% {left:0%; top:0%;}
+}
+
+#desecho3 {
+  position: absolute;
+  z-index: 4;
+  -webkit-animation-name: desecho3; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  -webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
+  animation-name: desecho3;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  cursor: grab;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes desecho3 {
+  0%   {left:0%; top:0%;}
+  25%  {left:40%; top:0%;}
+  50%  {left:40%; top:50%;}
+  75%  {left:0%; top:50%;}
+  100% {left:0%; top:0%;}
+}
+
+/* Standard syntax */
+@keyframes desecho3 {
+  0%   {left:0%; top:0%;}
+  25%  {left:40%; top:0%;}
+  50%  {left:40%; top:50%;}
+  75%  {left:0%; top:50%;}
+  100% {left:0%; top:0%;}
+}
+
+#desecho4 {
+  position: absolute;
+  z-index: 5;
+  -webkit-animation-name: desecho4; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  -webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
+  animation-name: desecho4;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  cursor: grab;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes desecho4 {
+  0%   {left:0%; top:0%;}
+  25%  {left:40%; top:0%;}
+  50%  {left:40%; top:50%;}
+  75%  {left:0%; top:50%;}
+  100% {left:0%; top:0%;}
+}
+
+/* Standard syntax */
+@keyframes desecho4 {
+  0%   {left:0%; top:0%;}
+  25%  {left:40%; top:0%;}
+  50%  {left:40%; top:50%;}
+  75%  {left:0%; top:50%;}
+  100% {left:0%; top:0%;}
+}
+
+.hidden {
+  display: none;
+}
+
+.volver1 {
+  position: absolute;
+  left: 90%;
+  top: 70%;
+  width: 7%;
+  -webkit-animation-name: desapareceflecha;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: desapareceflecha;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  }
+  
+  @keyframes desapareceflecha {
+  0% {  opacity: 0; }
+  100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes desapareceflecha {
+  0% {  opacity: 0; }
+  100% { opacity: 1; }
+  }
+
+/* Estilo Consecuencia 2_______________________________ */
+
+.dark {/* Color de fondo de la página consecuencia 2*/
+  background-color: #60574F;
+}
+
+.relativo {
+  position: relative;
+}
+
+.diario1 {
+  position: absolute;
+  top: 7%;
+  z-index: 6;
+  width: 50%;
+  -webkit-animation-name: rotate1;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: rotate1;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotate1 {
+  0% { transform: rotate(0deg); left: 0%; opacity: 1;}
+  50% { transform: rotate(360deg); left: 5%; opacity: 1;}
+  100% { transform: rotate(360deg); left: 5%; opacity: 0.5;}
+}
+
+@-webkit-keyframes rotate1 {
+  0% { transform: rotate(0deg); left: 0%; opacity: 1;}
+  50% { transform: rotate(360deg); left: 5%; opacity: 1;}
+  100% { transform: rotate(360deg); left: 5%; opacity: 0.5;}
+}
+
+.diario2 {
+  position: absolute;
+  top: 7%;
+  z-index: 7;
+  width: 50%;
+  -webkit-animation-name: rotate2;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: rotate2;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotate2 {
+  0% { transform: rotate(0deg); left: 0%; opacity: 1;}
+  50% { transform: rotate(360deg); left: 35%; opacity: 1;}
+  100% { transform: rotate(360deg); left: 35%; opacity: 0.5;}
+}
+
+@-webkit-keyframes rotate2 {
+  0% { transform: rotate(0deg); left: 0%; opacity: 1;}
+  50% { transform: rotate(360deg); left: 35%; opacity: 1;}
+  100% { transform: rotate(360deg); left: 35%; opacity: 0.5;}
+}
+
+.diario3 {
+  position: absolute;
+  top: 7%;
+  z-index: 8;
+  width: 50%;
+  -webkit-animation-name: rotate3;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: rotate3;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-delay: 1.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotate3 {
+  0% { transform: rotate(0deg); left: 0%; opacity: 1;}
+  100% { transform: rotate(360deg); left: 20%; opacity: 1;}
+}
+
+@-webkit-keyframes rotate3 {
+  100% { transform: rotate(360deg); left: 0%; }
+  0% { transform: rotate(0deg); left: 20%; }
+}
+
+.volver {
+  position: absolute;
+  z-index: 9;
+  width: 7%;
+  left: 90%;
+  top: 78%;
+  -webkit-animation-name: desapareceflecha;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 7s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: desapareceflecha;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-delay: 7s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  }
+  
+  
+  @keyframes desapareceflecha {
+  0% {  opacity: 0; }
+  100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes desapareceflecha {
+  0% {  opacity: 0; }
+  100% { opacity: 1; }
+  }
+
+ /*Carteles cuando erraste en consecuencia 1 y 2____________________*/
+
+ .erraste1 {  /*¡Mala decisión!*/
+   position: absolute;
+   font-size: 625%;
+   color: #FF3333;
+   z-index: 11;
+   left: 25%;
+   top: 20%;
+   -webkit-animation-name: desaparece;
+   -webkit-animation-duration: 2s;
+   -webkit-animation-iteration-count: 1;
+   -webkit-animation-timing-function: linear;
+   -webkit-animation-delay: 0s;
+   -webkit-animation-fill-mode: forwards;
+   animation-name: desaparece;
+   animation-duration: 2s;
+   animation-iteration-count: 1;
+   animation-timing-function: linear;
+   animation-delay: 0s;
+   animation-fill-mode: forwards;
+   opacity: 0;
+   }
+
+ .erraste2 { /*¡Oh no!*/
+   text-align: center;
+   position: relative;
+   z-index: 10;
+   font-size: 937.5%;
+   color: #FF3333;
+   -webkit-animation-name: desaparece;
+   -webkit-animation-duration: 2s;
+   -webkit-animation-iteration-count: 1;
+   -webkit-animation-timing-function: linear;
+   -webkit-animation-delay: 2s;
+   -webkit-animation-fill-mode: forwards;
+   animation-name: desaparece;
+   animation-duration: 2s;
+   animation-iteration-count: 1;
+   animation-timing-function: linear;
+   animation-delay: 2s;
+   animation-fill-mode: forwards;
+   opacity: 0;
+ }
+
+ @keyframes desaparece {
+   0% {  opacity: 0; }
+   50% { opacity: 1; }
+   100% { opacity: 0; }
+ }
+
+ @-webkit-keyframes desaparece {
+   0% {  opacity: 0; }
+   50% { opacity: 1; }
+   100% { opacity: 0; }
+ }
+
+/* Estilo Acertaste ________________________________________ */
+
+#bannerfinal {
+  height: 160px;
+  background-image: url(img/bannerfinal.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.aparece2 { /* para "¿Cómo ayudar?" y flechas en acertaste*/
+  -webkit-animation-name: aparece2;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: aparece2;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes aparece2 {
+  0% {  opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes aparece2 {
+  0% {  opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.acertaste {
+  font-size: 500%;
+  color: #6696C3;
+  text-align: center;
+  z-index: 15;
+}
+
+.encabezadoayudar {
+  text-align: center;
+  color: #6696C3;
+  margin-top: 0%;
+  font-size: 150%;
+}
+
+.flecha1 {
+  float: right;
+  position: relative;
+  -webkit-animation-name: flecha1; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.2s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+  -webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
+  animation-name: flecha1;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes flecha1 {
+  from {right: 5%;}
+  to {left: 5%;}
+}
+
+/* Standard syntax */
+@keyframes flecha1 {
+  from {right: 5%;}
+  to {left: 5%;}
+}
+
+.flecha2 {
+  position: relative;
+  -webkit-animation-name: flecha2; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.2s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+  -webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
+  animation-name: flecha2;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes flecha2 {
+  from {left: 5%;}
+  to {right: 5%;}
+}
+
+/* Standard syntax */
+@keyframes flecha2 {
+  from {left: 5%;}
+  to {right: 5%;}
+}
+
+.ayudar {
+  margin-top: -4%;
+  margin-bottom: 5%;
+}
+
+.comoayudar {
+  font-size: 300%;
+  color: #85D3D8;
+  text-align: center;
+  text-decoration: none;
+}
+
+.comoayudar:hover {
+ font-size: 340%;
+ color: #4AA9BB;
+}
+
+.gif {
+  position: relative;
+  width: 100%;
+  margin-top: 8%;
+}
+
+.contenidoayudar {
+  position: relative;
+  margin-top: 7%;
+  padding-bottom: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
+  font-size: 125%;
+}
+
+.volver3 {
+  position: absolute;
+  left: 45%;
+  margin-bottom: 2%;
+}

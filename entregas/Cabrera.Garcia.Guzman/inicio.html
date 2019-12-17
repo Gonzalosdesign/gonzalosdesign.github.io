@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Inicio</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+
+  <body>
+      <div class="container">
+    <div class="row">
+
+
+        <div class="col-12" id="banner2">
+            <h1><span class="titulo">Ayuda a tu país a crecer en los agronegocios!</span></h1>
+        </div>
+
+        <div class="col-12">
+            <h2>Cuando comience el cronometro ubica las represas en su lugar arrastrandolas hacia el mapa, para que Uruguay crezca en negocios agrarios.</h2>
+        </div>
+
+        <div class="col-2">
+            <img id="Imgrepresa1" src="img/represa.png" draggable="true" ondragstart="drag(event)">
+            <img id="Imgrepresa2" src="img/represa.png" draggable="true" ondragstart="drag(event)">
+            <img id="Imgrepresa3" src="img/represa.png" draggable="true" ondragstart="drag(event)">
+            <img id="Imgrepresa4" src="img/represa.png" draggable="true" ondragstart="drag(event)">
+            <img id="Imgrepresa5" src="img/represa.png" draggable="true" ondragstart="drag(event)">
+            <img id="Imgrepresa6" src="img/represa.png" draggable="true" ondragstart="drag(event)">
+        </div>
+
+        <div class="col-2">
+            <img id="Imgrepresa7" src="img/represa.png" draggable="true" ondragstart="drag(event)">
+            <img id="Imgrepresa8" src="img/represa.png" draggable="true" ondragstart="drag(event)">
+            <img id="Imgrepresa9" src="img/represa.png" draggable="true" ondragstart="drag(event)">
+            <img id="Imgrepresa10" src="img/represa.png" draggable="true" ondragstart="drag(event)">
+            <img id="Imgrepresa11" src="img/represa.png" draggable="true" ondragstart="drag(event)">
+            <img id="Imgrepresa12" src="img/represa.png" draggable="true" ondragstart="drag(event)">
+        </div>
+
+        <div class="col-6">
+            <div id="mapa" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                    </div>
+        </div>
+
+        <div class="col-2">
+            <img src="img/cronometro.gif">
+            <img src="img/contador.gif"><br><br>
+            <span id="ganaste"><a href="ganaste.html"><b>¡¡GANASTE!!</b></a></span>
+
+        </div>
+
+        <div class="col-12">
+            <div class="footer">
+            <h4>Ley de riego</h4>
+            <h5>PAI | LDCV | 2019</h5>
+        </div>
+                </div>
+
+
+
+  </div> <!--cierre row-->
+</div> <!--cierre container-->
+</body>
+
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+
+</html>

@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+* {box-sizing: border-box;}
+
+.row::after {content: ""; clear: both; display: table;}
+
+[class*="col-"] {float: left;}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+/*--------Características Generales---------*/
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 15pt;
+  line-height: 1.8em;
+  text-align: center;
+  color: white; 
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  padding: 25px;
+}
+
+.texto {
+  padding: 30px 150px;
+}
+
+h1, h2, h3 {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px 10px;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+/*fondos de pantalla___________*/
+
+.iniciofin {
+  background-image: url("../img/3inicio.fin.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.basura {
+  background-image: url("../img/1basura.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.refugio {
+  background-image: url("../img/2arbol.casa.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.agua {
+  background-image: url("../img/4charco.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+/*--------Botones---------*/
+
+.boton {
+  -webkit-animation: aparecer 3s;
+  animation: aparecer 3s;
+}
+
+@keyframes aparecer {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  80% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.botonproblema {
+  padding: 20px;
+  border-radius: 20px;
+  flex-direction: column;
+  display: inline-block;
+  position: relative;
+  background-color: #3CD2FA;
+}
+
+.botonproblema:hover {
+  color: black;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: yellow;
+  -webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
+  animation: pulsate-bck 0.5s ease-in-out infinite both;
+}
+
+@keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/*--------Perrobien---------*/
+
+.perrobien {
+  position: fixed;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: -95px;
+  width: 100%;
+  animation-name: wagglee;
+  animation-duration: 1s;
+  animation-delay: .1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes wagglee {
+  0%, 100% {
+    transform: rotate(4deg);
+  }
+  50% {
+    transform: rotate(-4deg);
+  }
+}
+
+/*--------Perromal---------*/
+
+  .perromal {
+  position: fixed;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: -95px;
+  width: 100%;
+  animation-name: waggle;
+  animation-duration: 2s;
+  animation-delay: .2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes waggle {
+  0%, 100% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+}
+

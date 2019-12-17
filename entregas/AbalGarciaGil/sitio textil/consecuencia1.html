@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Consecuencia 1</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+  </head>
+
+  <body>
+
+    <div class="row full-height">
+
+      <div class="col-12" id="desecho1">
+        <img id="desecho1" class="desecho" src="img/desecho1.png" draggable="true" ondragstart="drag(event)">
+      </div>
+
+      <div class="col-12" id="desecho2">
+        <img id="desecho2" class="desecho" src="img/desecho2.png" draggable="true" ondragstart="drag(event)">
+      </div>
+
+      <div class="col-12">
+        <h1 class="erraste1">¡Mala decisión!</h1>
+        <p class="info1">La chaqueta que elegiste está hecha de un material no biodegradable</p>
+        <p class="info2">Atrapa los desechos textiles y tíralos a la basura</p>
+      </div>
+
+      <div class="col-12">
+        <div id ="container">
+          <p class="bienhecho" id="welldone">¡Bien hecho!</p>
+        </div>
+        <div>
+          <img class="papelera" id="papelera" src="img/papelera.png" ondrop="drop(event)" ondragover="allowDrop(event)">
+        </div>
+      </div>
+
+      <div class="col-12" id="desecho3">
+        <img id="desecho3" class="desecho" src="img/desecho3.png" draggable="true" ondragstart="drag(event)">
+      </div>
+
+      <div class="col-12" id="desecho4">
+        <img id="desecho4" class="desecho" src="img/desecho4.png" draggable="true" ondragstart="drag(event)">
+      </div>
+
+      <div>
+        <a class="hidden volver1" class="volver1" id="finish-button" href="eleccion2.html">
+        <img src="img/volveraelegir.png">
+        </a>
+      </div>
+
+    </div><!--cierre de div row full-height-->
+
+    <script>
+
+    var desechos = countDesechos();
+    var dropping = false;
+    function allowDrop(ev) {
+      ev.preventDefault();
+      console.log('allow drop');
+    }
+
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+    }
+
+    /* Drag */
+    document.ondragstart = function(event) {
+      event.dataTransfer.setData("Text", event.target.id);
+
+    };
+
+    /* Drop */
+    document.ondragover = function(event) {
+      event.preventDefault();
+    };
+
+    document.ondrop = function(event) {
+      event.preventDefault();
+      var data = event.dataTransfer.getData("Text");
+      event.target.appendChild(document.getElementById(data));
+      toggleaAndUntoggleClass('welldone', 'visible');
+
+
+      var a = 0;
+      var b= 0;
+      console.log(" "+a+" "+b+", : "+ suma(a,b));
+      desechos = desechos - 1;
+      if (desechos === 0) {
+        toggleClass('finish-button', 'hidden');
+      }
+      console.log("la cantidad de desechos es ", desechos);
+    };
+
+    function suma(numero1, numero2) {
+      return numero1+numero2;
+    }
+
+    function toggleaAndUntoggleClass(id, classname, time = 500) {
+
+      toggleClass(id, classname);
+
+      setTimeout(function(){
+        toggleClass(id, classname);
+      }, time);
+    }
+
+    function toggleClass(id, classname) {
+      console.log('toggle called with ', id, classname);
+      var element = document.getElementById(id);
+      element.classList.toggle(classname);
+    } //le saca o agrega clase o id
+
+    function countDesechos() {
+      return document.getElementsByClassName('desecho').length;
+    } //conteo de desechos
+
+    </script>
+
+  </body>
+
+</html>

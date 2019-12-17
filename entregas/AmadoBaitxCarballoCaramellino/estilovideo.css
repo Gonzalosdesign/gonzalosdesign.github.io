@@ -1,0 +1,84 @@
+body  {
+  display: block;
+  height:13000px;
+}
+#v0{
+  position: fixed ;
+  top: 0  ;
+  left: 0  ;
+  width: 100%;
+}
+#time{
+  position:fixed;
+  z-index: 1;
+}
+
+.content {
+  opacity:0;
+  position: fixed;
+  top: 80%;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  display: block;
+  background: none;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  transform: translateY(0%);
+  transition: 0.7s ease-in-out all;
+}
+
+
+
+/* ----------------------- Botones----------------------- */
+
+div.begin-container, div.button-container,  div.icon-container
+{ text-align: center;
+margin: 20px;
+}
+
+div.begin-container{padding-top: 160pt;}
+div.button-container {padding-top: 270pt;}
+div.icon-container {padding-top: 84pt;}
+
+a.begin, a.button, a.icon
+{
+background: green;
+border-style: none;
+cursor: pointer;
+-webkit-transition-duration: 0.4s;
+transition-duration: 0.3s;
+text-decoration: none;
+font-weight:bold;
+color: white;
+}
+
+a.icon {border-radius: 50%;}
+a.begin, a.button {border-radius: 3px;}
+
+p {color: white;
+text-align: center;
+font-family: 'Raleway', sans-serif;}
+
+a.icon {
+padding: 200px 40px;
+font-size: 30px;
+}
+a.begin, a.button {
+padding: 10px 20px;
+font-size: 16px;
+}
+
+a.begin:hover, a.button:hover, a.icon:hover
+{
+background-color: black;
+color: white;
+}
+
+
+
+.content.active {
+  opacity: 1;
+  transform: translateY(-100%);
+}
