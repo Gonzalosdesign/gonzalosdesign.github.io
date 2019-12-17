@@ -1,0 +1,83 @@
+body {
+    background-image: url(img/patron.jpg);
+    color: white;
+    text-decoration: none;
+}
+
+
+.heading {
+    position: absolute;
+    display:block;
+    margin:auto;
+}
+
+p.desc {
+  letter-spacing: 0.5px;
+  margin-top: 4%;
+  margin-bottom: 60px;
+  font-family: "Courier new";
+  margin: 6%;
+}
+
+p.desc2 {
+  letter-spacing: 0.5px;
+  font-family: "Courier new";
+  margin: 2%;
+}
+
+fieldset {
+    background-color: white;
+    opacity: 0.5;
+    color: black;
+    margin-right: 4%;
+    margin-left: 4%;
+}
+
+
+
+
+
+.btn {
+    display: inline-block;
+    background-color: black;
+    padding: 15px 40px;
+    border: 2px solid white;
+    border-radius: 30px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+
+
+    font-size: 20px;
+    font-family: "Courier new";
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+
+    box-shadow: 0 6px 0 grey;
+    cursor: pointer;
+    transition: all 100ms linear;
+    
+    &:hover {
+        @include transform(translateY(-4px));
+        box-shadow: 0 7px 0 red;
+    }
+
+    &:focus { outline: 0; }
+}
+
+
+
+.align-center {
+    text-align: center;
+}
+
+.hide {
+    display: none !important;
+}
+
+.cursor-default {
+    cursor: default !important;
+}
+
+
+

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tercer intento</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+<div class="container">
+
+  <div class="row">
+    <div class="col-12" id="cuentatras">
+    </div>
+  </div>  
+  <div class="row" id="contenedor">
+    <div class="col-6" id="crono">
+    </div>
+    <div class="col-6 vida">
+      <img src="img/vida/vida1.png" alt="vida_jugador_dos_corazones">     
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 personaje">
+      <img src="img/cerebro.png" alt="cerebro">
+    </div>
+  </div>
+
+<!--Personajes triangulos no se ocultan lineas 54, 61 y 64-->
+
+  <div class="row">
+
+    <div class="col-4 tripant3 ocultar cursor">
+      <img src="img/tri/t.png">
+    </div>
+    <div class="col-4 tri2pant3 ocultar cursor">
+      <img src="img/tri/t2.png">
+    </div>
+    <div class="col-4 tri3pant3 ocultar cursor">
+      <img src="img/tri/t3.png">
+    </div>
+    
+  </div>
+
+  <div class="row">
+    
+    <div class="col-4 tri4pant3 ocultar cursor">
+      <img src="img/tri/t4.png">
+    </div>
+
+    <div class="col-4 tri5pant3 ocultar cursor">
+      <img src="img/tri/t5.png">
+    </div>
+    <div class="col-4 tri6pant3 cursor">
+      <img src="img/tri/t6.png">
+    </div>
+  
+  </div>
+  <div class="row">
+
+    <div class="col-4 tri7pant3 cursor">
+      <img src="img/tri/t7.png">
+    </div>
+    <div class="col-4 tri8pant3 cursor">
+      <img src="img/tri/t8.png">
+    </div>
+    <div class="col-4 tri9pant3 ocultar cursor">
+      <img src="img/tri/t9.png">
+    </div>
+  
+  </div>
+
+<!--microbio verde se ocultan todos -->
+
+  <div class="row">
+  
+    <div class="col-4 cuapant3 ocultar cursor">
+      <img src="img/cua/cu.png">
+    </div>
+    <div class="col-4 cua2pant3 ocultar cursor">
+      <img src="img/cua/cu2.png">
+    </div>
+    <div class="col-4 cua3pant3 ocultar cursor">
+      <img src="img/cua/cu3.png">
+    </div>
+  
+  </div>
+  <div class="row">
+    
+    <div class="col-4 cua4pant3 ocultar cursor">
+      <img src="img/cua/cu4.png">
+    </div>
+    <div class="col-4 cua5pant3 ocultar cursor">
+      <img src="img/cua/cu5.png">
+    </div>
+    <div class="col-4 cua6pant3 ocultar cursor">
+      <img src="img/cua/cu6.png">
+    </div>
+  
+  </div>
+  <div class="row">
+    
+    <div class="col-4 cua7pant3 ocultar cursor">
+      <img src="img/cua/cu7.png">
+    </div>
+    <div class="col-4 cua8pant3 ocultar cursor">
+      <img src="img/cua/cu8.png">
+    </div>
+    <div class="col-4 cua9pant3 ocultar cursor">
+      <img src="img/cua/cu9.png">
+    </div>
+    
+  </div>
+
+<!--microbio azul se ocultan todos-->
+  <div class="row">
+    
+    <div class="col-4 circpant3 ocultar cursor">
+      <img src="img/circ/c.png">
+    </div>
+    <div class="col-4 circ2pant3 ocultar cursor">
+      <img src="img/circ/c2.png">
+    </div>
+    <div class="col-4 circ3pant3 ocultar cursor">
+      <img src="img/circ/c3.png">
+    </div>
+  
+  </div>
+  <div class="row">
+
+    <div class="col-4 circ4pant3 ocultar cursor">
+      <img src="img/circ/c4.png">
+    </div>
+    <div class="col-4 circ5pant3 ocultar cursor">
+      <img src="img/circ/c5.png">
+    </div>
+    <div class="col-4 circ6pant3 ocultar cursor">
+      <img src="img/circ/c6.png">
+    </div>
+  
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+<script>
+//ocultar con click    
+    $(document).ready(function(){
+      $(".ocultar").click(function(){
+        $(this).hide();
+    });  
+    });
+
+//cronometro
+function countdown() {
+    	var seconds = 20;
+	    setTimeout (function tick() {
+	        var counter = document.getElementById("crono");
+	        seconds--;
+	        counter.innerHTML = (seconds < 10 ? "0" : "")  + String(seconds) + "S";
+	        if( seconds > 0 ) {
+	            setTimeout(tick, 1000);
+	            draw();
+	   			update();
+	        } else {
+            alert("bueno... PERDISTE otra vez (ง︡'-'︠)ง");
+              window.location="fin.html";
+	            clearInterval(runGame);
+             
+          }
+	    }, 5000);
+    	tick();
+	}
+
+countdown();
+
+
+</script>
+
+</body>
+</html>

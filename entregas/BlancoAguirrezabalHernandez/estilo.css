@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:500,700,800i&display=swap');
+
+* {box-sizing: border-box;}
+
+.row::after {content: ""; clear: both; display: table;}
+
+[class*="col-"] {float: left;}
+
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;} 
+
+@media only screen and (max-width: 768px) {   /* Para celulares________________________ */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+/*fondo______________________________*/
+
+.fondo {
+	background-color: #c5c6c8;
+}
+
+.campo {
+	background-image: url(img/jardin.jpg);
+	background-size: cover;
+}
+
+/*cuerpo______________________________*/
+
+#franja {
+	background-color: #c5c6c8;
+	height: 150px;
+	width: 100%;
+}
+
+.audio {
+	margin-top: 40px;
+	float: right;
+}
+
+#subsuelo {
+	padding-bottom: 200px;
+	text-decoration: none;
+}
+
+.pregunta {
+	font-size: 50px;
+	color: white;
+	text-align: center;
+}
+
+/*imagenes______________________________*/
+
+.canilla {
+	width: 100%;
+	cursor: pointer;
+}
+
+.mundo {
+	width: 550px;
+  	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	cursor: pointer;
+}
+
+.casa { 
+  	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1300px;
+}
+
+.fabrica {
+	margin: 20px;
+	width: 90%;
+}
+
+.icono {
+	width: 20px;
+	margin-right: 10px;
+}
+
+/*textos______________________________*/
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin: 20px;
+	font-size: 19px;
+	color: black;
+	font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	color: #85868a;
+}
+
+h1 {
+	margin: 40px;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	color: #85868a;
+	-webkit-animation: scale-in-hor-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
+	        animation: scale-in-hor-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
+}
+
+/*animacion h1______________________________*/
+
+@-webkit-keyframes scale-in-hor-center {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in-hor-center {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+.seleccion {
+	margin-top: 0;
+	background-color: white;
+	height: 45px;
+	color: #85868a;
+	text-align: center;
+	font-size: 35px;
+}
+
+.titulo {
+	text-align: right;
+	margin-top: 120px;
+	font-size: 15px;
+}
+
+.texto {
+	margin: 60px 30px 30px 10px;
+}
+
+.no {
+	font-size: 200px;
+	color: white;
+	-webkit-animation: scale-out-center 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite reverse both;
+	        animation: scale-out-center 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite reverse both;
+}
+
+/*animación NO______________________________*/
+
+@-webkit-keyframes scale-out-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+}
+@keyframes scale-out-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+}
+
+.gracias {
+	margin: 30px;
+	font-size: 50px;
+	text-align: center;
+}
+
+.texto2 {
+	margin: 30px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.presentacion {
+	font-size: 15px;
+}
+
+/*logo______________________________*/
+
+.logo {
+	margin: 15px 0 0 45px;
+	width: 60px;
+}
+
+.logogrande {
+	width: 300px;
+	margin: 30px 30px 0 30px;
+}
+
+/*formulario_____________________________________________*/
+
+input[type=text], input[type=email], textarea {
+	width: 100%;
+	padding: 12px 20px;
+	border: 1px solid #CCC;
+}
+
+textarea {
+	height: 100px;
+	resize: none;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+	border: solid #85868a;
+	outline: none;
+}
+
+input[type=submit] {
+	font-size: 10pt;
+	font-weight: bold;
+	padding: 12px 20px;
+	border: none;
+	background-color: #7b7d7d;
+	color: white;
+}
+
+input[type=submit]:hover {
+	background-color: black;
+	cursor: pointer;
+}
+

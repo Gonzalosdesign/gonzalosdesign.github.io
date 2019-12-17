@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Instrucciones</title>
+	 <meta charset="utf-8">
+	 <link rel="stylesheet" type="text/css" href="estilo.css">
+	 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+<div class="col-12">
+
+                <h2>Instrucciones</h2>
+	<div class="col-4">
+    <div class="instrucciones">
+    <img src="img/auriculares.png">
+    <p>Usá auriculares para una mejor experiencia</p>
+    </div>
+    </div>
+
+    <div class="col-4">
+    	    <div class="instrucciones">
+        <img src="img/ojoblanco.png">
+           <p>Prestá atención</p>
+           </div>
+    </div>
+
+    <div class="col-4" >
+    	    <div class="instrucciones">
+                <div id="pepito" onclick="Homero()" class="scale-down-center"  >
+                   		</div>
+                        <p>Intentá seguir el ritmo de la respiración</p>
+
+<script>
+ function Homero() {
+      document.getElementById("pepito").style.WebkitAnimationPlayState = "running"; // Code for Chrome, Safari, and Opera
+      document.getElementById("pepito").style.AnimationPlayState = "running"; }
+    </script>
+
+    
+    </div>
+    </div>
+    </div>
+
+
+<div class="col-12">
+	
+
+   <div id="play">
+    <a href="video.html">Continuar</a>
+    </div>
+
+
+</div>
+
+</body>
+</html>

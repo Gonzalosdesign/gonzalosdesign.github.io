@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, incial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css"> 
+    <script>
+    function vamoajugar() {                           
+      var element = document.getElementById("iframe");
+      element.classList.remove("out2");
+      element.classList.remove("nop");
+       element.classList.add("in2");
+       var element = document.getElementById("fullbutton");
+      element.classList.remove("nop");
+      element.classList.remove("out2");
+       element.classList.add("in2");                
+    }    
+  </script>
+    <script>    
+      window.onscroll = function() {out()};
+      function out() {
+        if (document.body.scrollTop > 150  || document.documentElement.scrollTop > 150 ) {
+          var element = document.getElementById("iframe");              
+          element.classList.remove("iframefull");
+                      
+        }
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        var element = document.getElementById("iframe");              
+        element.classList.add("out2");
+        var element = document.getElementById("fullbutton");
+        element.classList.remove("in2");
+        element.classList.add("out2");
+      }
+      }
+    </script>    
+    <script>
+    function full() {
+       var element = document.getElementById("iframe");
+      element.classList.remove("in2");
+      element.classList.add("iframefull");
+       var element = document.getElementById("bodyindex");      
+        element.classList.add("barraout");                      
+    }
+  </script>    
+
+  </head>
+  <!--I am in love to your body-->
+  <body class="bindex barraloka" id="bodyindex">  
+    <!--apertura de div container o "estantería"-->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 iframecoso" id="iframecontent" >  
+          <iframe class="iframe nop" id="iframe" src="personajes.html"></iframe>          
+        </div>
+      </div>             
+      <!--Banner y boton para ir al juego-->
+      <div class="row" id="volverjuego">
+        <div class="col-12" id="banner">
+         <button class="button jugar uop1" id="botonjugar" onclick="vamoajugar()">Comenzar juego </button>
+         <button class="iframebutton full nop" id="fullbutton" onclick="full()">Full Size</button>         
+        </div>
+      </div>          
+      <!--Quienes somos-breve descripcion de quienes somos y porque surge la iniciativa-nota educar en empatia-->
+      <div class="row tododata menostop" id="todalainfo">
+        <div class="row" id="quienessomos">                    
+          <div class="col-12 b">
+            <button class="buttonselected" id="botonb" onclick="desplegarb()">¿Quienes somos?</button>
+            <h6 class="nop" id="infob">Toca para desplegar la información.</h6>
+          </div>
+        </div>
+        <div class="row"> 
+          <div class="col-12" id="b">              
+            <p> Somos un grupo de estudiantes de la Licenciatura de diseño de Comunicación Visual, sin fines de lucro, preocupados en los espacios de convivencia ciudadana y la mejora de los mismos.
+            </p>
+            <p>Mediante el marco de la materia Producción Audiovisual Interactiva (PAI II) desarrollamos este producto centrado en brindar  información y concientización al usuario con una problemática de interés público, silenciosa pero dañina.</p>
+            <p>Mediante lo lúdico e interactivo te presentamos Juntála, un sitio que tiene por objetivo  acercar ciudadanos al dilema de los desechos de nuestras mascotas en la vía pública, lo cual conlleva riesgos sanitarios y medioambientales, y aunque parece obvio que no levantar las heces de la vía pública está mal, es muy sorprendente la cantidad de personas que deciden no hacerlo.</p>
+            <p>Además te informamos sobre medidas y opciones alternativas para evitar el uso de bolsas plásticas al momento de recoger los desperdicios de nuestras mascotas y ayudar no solo a una mejor convivencia ciudadana, sino que al cuidado del planeta, te invitamos a disfrutar de nuestro sitio para solucionar esta problemática juntos.</p>            
+          </div>
+        </div>
+        <div class="row"> 
+          <div class="col-12"> 
+            <button class="cbutton" id="repleb" onclick="replegarb()"></button>
+          </div>             
+        </div>            
+        <!--Como puedo ayudar-->      
+        <div class="row" id="comoayudar">
+          <div  class="col-12 c">
+            <button class="button" id="botonc" onclick="desplegarc()">¿Como ayudar?</button>
+            <h6 class="infosutil" id="infoc">Toca para desplegar la información.</h6>
+          </div>
+        </div>
+        <div class="row">
+          <div  class="col-12 nop" id="c">
+            <p>Desde el equipo de Juntála, creemos que lo esencial ante esta problemática como en muchas otras que refieren a la convivencia, es el desarrollo de una comunidad más empática, pero a veces para tener empatía sobre ciertos temas, hay que tener información veraz y dejar de lado ciertos mitos que nos hacen daño.  Entender que nuestras acciones tienen consecuencias sobre nuestra salud y la de los demás, que muchos de ellos no eligieron cohabitar con mascotas y aun así sufren las consecuencias en sus  barrios.</p>
+
+            <p>Mucha gente piensa que no es necesario levantar las heces cuando se encuentran en pasto o tierra, porque piensan que sirven de fertilizante, pero esto es completamente erróneo. Las heces del perro no sirven de fertilizante, ya que su composición es muy ácida y quema el pasto, además están cargadas de bacterias, parásitos, virus y hongos.</p>
+            
+            <p>Siempre, sin ninguna excepción, los dueños de perros deben recoger las heces que estos depositan al defecar y orinar. Dejar los restos en el suelo, ya sea en la calle, el jardín, o cualquier otro lugar, no es seguro ni beneficioso.</p>
+
+            <p>Aquí te dejamos algunos tips para poder contribuir entre todos a una mejor convivencia.
+            Si vives con perros, olvídate de tu bolsita de plástico. Bien puedes recoger los desechos de tu perro con una pala, con papel periódico, servilletas usadas, etc. Actualmente con las iniciativas ambientales que están surgiendo, existen varios emprendimientos que realizan bolsas de papel kraft para ese uso específico. De regreso a casa  tiralas en el contenedor más cercano. A pesar de ser incómodo y menos higiénico a simple vista, el papel es la opción más sana para el medio ambiente.
+            Así estamos ayudando a mantener no sólo la ciudad sino el planeta un poco más limpio, evitando el uso de bolsas plásticas.</p>
+
+            <p>Considera también asignar un lugar de tu casa o departamento específico para sus necesidades.
+            Lo mejor para él, para ti y para el medio ambiente es que le asignes un lugar para sus desechos. Recuerda siempre mantener ese lugar limpio, es la mejor opción para que tu mascota no tenga que aguantar horas hasta que tú puedas sacarlo afuera. 
+            En el caso de los gatos usa arena de buena calidad.
+            No sólo importa que se aglutinen y atrapen los olores, busca aquellas marcas que no usen elementos contaminantes.</p>
+
+            <p>Vivir con animales implica cuidarlos y ayudarlos a integrarse a los otros seres vivos que los rodean. Si necesitas ayuda para entrenar a tu perro o gato a desechar sus necesidades donde tú se los indiques, acércate a un etólogo. </p>
+
+            <h2 class="amarillo menostop">¿Puedo ayudar si no tengo mascotas?</h2>
+            <h3 class="">¡Por supuesto que sí!</h3>
+            <p>Si te preocupa la problemática, pero no tienes mascotas, siempre habra cosas en las que ayudar. 
+            Seguro donde vives hay personas que tienen. Si bien no todas las personas están abiertas a escuchar consejos, algunas sí lo hacen, y no deberías dudar en hacer recomendaciones. Una manera simple, sería preguntarles a tus personas cercanas, como manejan el tema, ante la pregunta, surge la reflexión de un tema que generalmente no se habla, en el intercambio surge un enriquecimiento que ayuda a la mejora de los hábitos de tu comunidad.</p>
+
+            <h4 class="menostop">Por supuesto, compartir la experiencia de Juntála, confiamos mucho en el play learning como una herramienta que educa a personas de todas las edades.</h4>          
+            <div class="row">
+              <div class="col-12 redes">
+                <button class="redesbutton facebook inline menosbotton" id="facekook" onclick="sory()"></button>
+                <button class="redesbutton instagram inline menosbotton" id="instagram" onclick="sory()"></button>
+                <button class="redesbutton twitter inline menosbotton" id="twitter" onclick="sory()"></button>
+                <button class="redesbutton whats inline menosbotton" id="whats" onclick="sory()"></button>
+                <h6 class="nop " id="noloserick">Momentaneamente esta opción esta deshabilitada.</h6>                                
+              </div>
+            </div>          
+         </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <button class="cbutton nop" id="replec" onclick="replegarc()"></button>
+          </div>
+        </div>           
+        <!--Informacion para nerds-->     
+        <div class="row" id="infonerds">
+          <div class="col-12 d">
+            <button class="button" id="botond" onclick="desplegard()">Información para nerds</button>
+            <h6 class="infosutil" id="infod">Toca para desplegar la información.</h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 nop" id="d">           
+            <h2 class="menostop"> Gracias por llegar hasta aquí, el mundo necesita más personas como tú, más personas interesadas en saber y ayudar.</h2>
+            <p>La ineficiente gestión de las heces de los perros posee diferentes facetas, es decir, está conectada con otras cuestiones ambientales y sociales por resolver dentro de la ciudad, así mismo sus orígenes radican no solo en una, sino en varias causas, e igualmente sus consecuencias pueden impactar a los recursos y a los seres vivos en más de una manera.</p>
+
+            <p>El lugar donde el animal realizó su deposición tiene posibilidades a incidentes desafortunados para las personas que se topan de cerca con dichos residuos y más aún para aquellos que de manera súbita llegan a hacer contacto con los mismos, lo cual, además de resultar desagradable puede dar lugar a infecciones o enfermedades, especialmente si se tiene en cuenta que muchos de estos lugares son parques a los cuales asisten seres humanos de diferentes edades a realizar múltiples actividades físicas y/o recreativas.</p>
+
+            <p>Al abordar la cuestión de la ineficaz gestión de residuos orgánicos con potencial riesgo biológico como lo son las excretas caninas, es obligatorio tratarla desde al menos dos perspectivas distintas. La primera de ellas es el dilema que representan las heces de los perros abandonadas al aire libre, en donde pueden generar impactos de índole diverso como a la salud humana y animal, al medio ambiente y al aspecto estético que se percibe de un lugar, lo cual a su vez afecta en mayor o menor medida la tranquilidad de las personas que frecuentan dichos sitios, ya sea por tener contacto visual, olfativo o incluso contacto directo al pisar accidentalmente dicho material, esto último se torna frecuente debido a que generalmente los sitios donde los perros realizan sus deposiciones son los mismos en por diferentes motivos como pueden ser recrearse, ejercitarse, relajarse, o simplemente pasar por dicha área para trasladarse a su destino.</p>
+
+            <p>El segundo aspecto igualmente importante para describir el problema de las heces caninas incorrectamente gestionadas, tiene que ver con el método de disposición final aplicado a las mismas, el cual actualmente consiste en trasladar el material a rellenos Sanitarios.</p>
+
+            <p>En los rellenos sanitarios los residuos orgánicos se degradan de manera anaeróbica, lo cual genera gases de efecto invernadero, malos olores, vectores y lixiviados altamente tóxicos que al mezclarse con sustancias inorgánicas provenientes de otros residuos, pueden perpetuar o incrementar su nivel contaminante, lo cual pone en riesgo a las personas que laboran dentro y en las inmediaciones del relleno, además de la población cercana a los cauces de las fuentes de agua donde se disponen dichos lixiviados en el caso de que las plantas de tratamiento que los descontaminan, lleguen a colapsar por que los lixiviados generados lleguen a superar su capacidad hidráulica de tratamiento .</p>
+
+            <p>Un tercer punto de carácter altamente significativo y que es necesario mencionar, es el hecho de que al depositar los residuos sólidos orgánicos a un relleno sanitario, literalmente se desperdicia material biológico que posee propiedades valiosas para un buen desarrollo del suelo y con el cual se haría un apropiado uso del mismo de manera sostenible ya sea con fines agrícolas o de conservación.</p>
+
+            <p>En el lugar donde el animal realizó su deposición tienen lugar incidentes desafortunados para las personas que se topan de cerca con dichos residuos y más aún para aquellos que de manera súbita llegan a hacer contacto con los mismos, lo cual, además de resultar desagradable puede dar lugar a infecciones o enfermedades, especialmente si se tiene en cuenta que muchos de estos lugares son parques a los cuales asisten seres humanos de diferentes edades a realizar múltiples actividades físicas y/o recreativas.</p>
+
+            <p>No son pocos los impactos generados al medio ambiente y a la salud humana ocasionados por la deficiente gestión ciudadana y gubernamental de este tipo de residuos de carácter orgánico, lo cual induce a la búsqueda de alternativas de solución. La contaminación generada por las excretas de mascotas tiene el potencial de afectar los recursos suelo, aire y agua. Atanasio Sagoyo (2004) afirma que: Las heces dejadas al aire libre, en épocas de secas se deshidratan y con el viento se dispersan, pasando a formar parte de las partículas biológicas invisibles del aire que todos respiramos. Esta materia fecal al secarse, se transforma en polvo orgánico que ensucia aún más el aire que respiramos. Dichas partículas suspendidas tienen un gran potencial de portar bacterias o huevecillos de diferentes parásitos y los mismos pueden ingresar al organismo (de humanos y animales) por medio de la respiración. Por otro lado, en época de lluvias las heces se disuelven y son arrastradas lo cual puede generar que contaminan cuerpos de agua, tuberías de acueducto en mal estado o superficies que posteriormente estén en contacto directa o indirectamente con objetos con los que el ser humano o el animal llegue a palpar o lamer. </p>
+
+            <p>El conocimiento del riesgo de contagio de patógenos asociados a las heces caninas es fundamental para contribuir a su prevención, desafortunadamente muchos de los visitantes de parques públicos, los cuales son zonas donde se acentúa dicho riesgo debido a que al estar compuestos por zonas con césped (el cual es un elemento que por naturaleza el perro asocia a su actividad de deposición) también suelen ser frecuentados por humanos de distintas edades ya sean niños, jóvenes o adultos que desean realizar actividades de recreativas, lúdicas o de esparcimiento ignorando que aún si no es visualmente evidente, dicho riesgo biológico existe.</p>
+
+            <p>Si quieres informarte más sobre esta temática puedes revisar nuestras fuentes.</p>
+          </div>
+        </div>
+        <!--Fuentes-->
+        <div class="row" id="biblio">
+          <div class="col-12 e nop menosbotton" id="fuentes">
+            <button class="button" id="botone" onclick="desplegare()">Fuentes</button>
+            <h6 class="infosutilbye" id="infoe">Toca para desplegar la información.</h6>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 nop" id="e">
+          <div class="col-12 d menostop">          
+            <a class="buttonfuente " target="blank" href="https://medium.com/ecopoopet/opciones-para-deshacerte-de-las-heces-de-tu-mascota-8a8d037b579c">Opciones para deshacerte de las heces de tu mascota-Blog Social</a>
+            <h6 class="infosutil">Toca para dirigirte al sito.</h6>
+          </div>
+          <div class="col-12 d">          
+            <a class="buttonfuente" target="blank" href="https://ecoembesdudasreciclaje.es/donde-tirar-excremento-de-perro/">¿Dónde tirar el excremento de perro?-Blog Informativo</a>
+            <h6 class="infosutil">Toca para dirigirte al sito.</h6>
+          </div>
+          <div class="col-12 d">          
+            <a class="buttonfuente" target="blank" href="https://www.elobservador.com.uy/nota/multaran-con-1-660-a-quienes-no-levanten-la-caca-de-su-perro-20151024500">Multarán con $ 1.660 a quienes no levanten la caca de su perro-Noticia Local</a>
+            <h6 class="infosutil">Toca para dirigirte al sito.</h6>
+          </div>
+          <div class="col-12 d">          
+            <a class="buttonfuente" target="blank" href="https://www.lanacion.com.ar/lifestyle/el-excremento-de-las-mascotas-un-problema-ambiental-mundial-y-como-resolverlo-nid2148718">El excremento de las mascotas, un problema ambiental mundial y cómo resolverlo-Noticia Internacional</a>
+            <h6 class="infosutil">Toca para dirigirte al sito.</h6>
+          </div>
+          <div class="col-12 d">          
+            <a class="buttonfuente" target="blank" href="http://repository.udistrital.edu.co/bitstream/11349/6627/1/Beltr%c3%a1nRam%c3%adrezJuanDavid2016.pdf ">Tesis de la Facultad de Medio Ambiente y Recursos Naturales-Bogotá, Colombia-Artículo Académico</a>
+            <h6 class="infosutil">Toca para dirigirte al sito.</h6>
+          </div>
+          <div class="col-12 d">          
+            <a class="buttonfuente" target="blank" href="http://www.revzoilomarinello.sld.cu/index.php/zmv/article/view/127/221">Leptospirosis en el entorno actual-Artículo Académico</a>
+            <h6 class="infosutil">Toca para dirigirte al sito.</h6>
+          </div>                   
+        </div>
+      </div>  
+        <div class="row" >
+          <div class="col-12 menostop">
+              <button class="cbutton nop" id="repled" onclick="replegard()"></button>
+          </div>
+        </div>
+        </div>  
+        <div class="row" >
+          <div class="col-12">
+              <button class="cbutton nop" id="replee" onclick="replegare()"></button>
+          </div>
+        </div>      
+           
+      <!--Footer--> 
+      <div class="row">                 
+        <div class="col-12" id="footer">
+          <h4> <i>Diseñado por Emanuel Huergo - Eliana Palmieri - Lucas Goio </i>  | PAI II | LDCV | 2019</h4>
+        </div>
+      </div>    
+    </div><!--cierre de div container o "estantería"-->
+  </body>
+<!--Quienes Somos"------------------------------->
+  <script>
+    function desplegarb() {
+      var element = document.getElementById("b");
+      element.classList.remove("nop");      
+      element.classList.add("bmostrar");          
+      var element = document.getElementById("infob");
+      element.classList.remove("infosutil");
+      element.classList.add("infosutilbye");
+      var element = document.getElementById("repleb");
+      element.classList.remove("nop");
+      element.classList.remove("chaubotonb");      
+      element.classList.add("hibotonb");
+      var element = document.getElementById("botonb");
+      element.classList.remove("button");
+      element.classList.add("buttonselected");
+      var element = document.getElementById("todalainfo");
+      element.classList.add("menostop");       
+    }
+  </script>
+  <script>
+    function replegarb() {     
+      var element = document.getElementById("b");
+      element.classList.remove("bmostrar");
+      element.classList.add("nop");
+      var element = document.getElementById("infob");
+      element.classList.remove("infosutilbye", "nop");
+      element.classList.add("infosutil");
+      var element = document.getElementById("repleb");
+      element.classList.remove("hibotonb");
+      element.classList.add("chaubotonb");
+      var element = document.getElementById("botonb");
+      element.classList.remove("buttonselected");
+      element.classList.add("button");
+      var element = document.getElementById("todalainfo");      
+      element.classList.remove("menostop");     
+    }
+  </script>
+  <!--Como Ayudar"------------------------------->
+  <script>
+    function desplegarc() {
+      var element = document.getElementById("c");
+      element.classList.remove("nop");      
+      element.classList.add("cmostrar");          
+      var element = document.getElementById("infoc");
+      element.classList.remove("infosutil");
+      element.classList.add("infosutilbye");
+      var element = document.getElementById("replec");
+      element.classList.remove("nop");
+      element.classList.remove("chaubotonc");      
+      element.classList.add("hibotonc");
+      var element = document.getElementById("botonc");
+      element.classList.remove("button");
+      element.classList.add("buttonselected");      
+    }
+  </script>
+  <script>
+    function replegarc() {
+      var element = document.getElementById("c");
+      element.classList.remove("cmostrar");
+      element.classList.add("nop");               
+      var element = document.getElementById("infoc");
+      element.classList.remove("infosutilbye");
+      element.classList.add("infosutil");
+       var element = document.getElementById("replec");
+      element.classList.remove("hibotonc");
+      element.classList.add("chaubotonc");
+      var element = document.getElementById("botonc");
+      element.classList.remove("buttonselected");
+      element.classList.add("button")      
+    }
+  </script>
+  <!--Infor para Nerds"------------------------------->
+  <script>
+    function desplegard() {
+      var element = document.getElementById("d");            
+      element.classList.remove("nop");
+      element.classList.add("dmostrar");          
+      var element = document.getElementById("infod");
+      element.classList.remove("infosutil");
+      element.classList.add("infosutilbye");
+      var element = document.getElementById("repled");
+      element.classList.remove("nop");
+      element.classList.remove("chaubotond");      
+      element.classList.add("hibotond");
+      var element = document.getElementById("botond");
+      element.classList.remove("button");
+      element.classList.add("buttonselected");
+      var element = document.getElementById("fuentes");
+      element.classList.remove("nop");
+      var element = document.getElementById("infoe");
+      element.classList.remove("infosutilbye");
+      element.classList.add("infosutil");
+    }
+  </script>  
+  <script>
+    function replegard() {
+       var element = document.getElementById("d");
+      element.classList.remove("dmostrar");
+      element.classList.add("nop");              
+      var element = document.getElementById("infod");
+      element.classList.remove("infosutilbye");
+      element.classList.add("infosutil");
+       var element = document.getElementById("repled");
+       element.classList.remove("nop");
+      element.classList.remove("hibotond");
+      element.classList.add("chaubotond");
+      var element = document.getElementById("botond");
+      element.classList.remove("buttonselected");
+      element.classList.add("button")
+      var element = document.getElementById("fuentes");
+      element.classList.add("nop");
+      var element = document.getElementById("infoe");
+      element.classList.add("infosutilbye");
+      element.classList.remove("infosutil");
+       var element = document.getElementById("replee");      
+      element.classList.add("nop");           
+    }
+    function desplegare() {
+      var element = document.getElementById("botone");
+      element.classList.remove("button");
+      element.classList.add("buttonselected");
+      var element = document.getElementById("e");
+      element.classList.remove("nop");
+      element.classList.add("emostrar");
+      var element = document.getElementById("infoe");
+      element.classList.remove("infosutil");
+      element.classList.add("infosutilbye");
+      var element = document.getElementById("replee");
+      element.classList.remove("chaubotone");
+      element.classList.remove("nop");
+      element.classList.add("hibotone");            
+      var element = document.getElementById("repled");
+      element.classList.add("nop");
+    }
+
+  function replegare() {
+    var element = document.getElementById("replee");
+      element.classList.add("chaubotone");          
+      var element = document.getElementById("botone");
+      element.classList.remove("buttonselected");
+      element.classList.add("button")
+      var element = document.getElementById("e");
+      element.classList.add("nop");
+      var element = document.getElementById("infoe");
+      element.classList.add("infosutil");
+      element.classList.remove("infosutilbye");
+      var element = document.getElementById("repled");
+      element.classList.remove("nop");       
+  }
+  function sory() {
+    var element = document.getElementById("noloserick");
+    element.classList.remove("nop");
+    element.classList.add("infosutil");
+  }
+  </script>
+
+
+</html>

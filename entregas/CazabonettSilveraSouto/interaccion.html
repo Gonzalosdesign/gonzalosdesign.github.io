@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="estilointeraccion.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Interacción</title>
+    </head>
+
+    <body>
+        <section class="container">
+            <div class="content">
+                <img class="atencion" src="img/atencion.png" alt="Atencion"></br>
+                <h1>Scrollea para comenzar</h1>
+                <p>Viví la experiencia vos mismo...</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="content">
+                <h1>Al beber alcohol se nubla la visión...</h1>
+                <p>...esto puede ocasionar graves accidentes.</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="content">
+                <h1>También se reducen las habilidades motoras...</h1>
+                <p>...provocando la perdida de control del volante. </p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="content">
+                <h1>Cuida tu vida y la de otros...</h1>
+                <p>...una decisión de 5 segundos te puede costar la vida</p>
+
+                <!-- Trigger/Open The Modal -->
+                <button class="botonmodal" id="myBtn"><span>Vivilo tu mismo</span></button>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2>Vivilo tu mismo</h2>
+                    </div>
+
+                    <div class="modal-body">
+                        <video class="videofinal" width="50%" height="50%" controls>
+                            <source src="video/videofinal.mp4" type="video/mp4">
+                            /*https://www.youtube.com/watch?v=wuinyTKNWcI y https://www.youtube.com/watch?v=Bj4P5z9fupY*/
+                            
+                        </video>
+
+                        <div class="botones">
+                            <a class="botonvolver" href="elegir.html">Volver a elegir</a>
+                            <a class="botonfinalizar" href="index.html">Inicio</a>
+                            <a class="botonvolver" onclick="location.reload()">Cerrar</a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        <video id="v0" tabindex="0", autobuffer preload>
+            <source type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' src="video/videorecorrido.mp4"></source>
+        </video>
+
+        <script src="sticky.js"></script>
+
+        <script>
+/*Script interaccion______________________________________________________ */
+            enterView({
+                selector: 'section',
+                enter: function(el) {
+                    el.classList.add('entered');
+                }
+            })
+        
+            var frameNumber = 0, // start video at frame 0
+            // lower numbers = faster playback
+            playbackConst = 1000, 
+            // get page height from video duration
+            setHeight = document.getElementById("set-height"), 
+            // select video element         
+            vid = document.getElementById('v0'); 
+            // var vid = $('#v0')[0]; // jquery option
+
+            // dynamically set the page height according to video length
+            vid.addEventListener('loadedmetadata', function() {
+            setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
+            });
+
+
+            // Use requestAnimationFrame for smooth playback
+            function scrollPlay(){  
+            var frameNumber  = window.pageYOffset/playbackConst;
+            vid.currentTime  = frameNumber;
+            window.requestAnimationFrame(scrollPlay);
+            }
+
+            window.requestAnimationFrame(scrollPlay);
+
+/*Script modal______________________________________________________ */
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+
+        </script>
+    </body>
+</html>

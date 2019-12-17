@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap|Open+Sans:800');
+* {box-sizing: border-box;}
+
+.row::after {content: ""; clear: both; display: table;}
+
+[class*="col-"]{float: left;}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {[class*="col-"] {width: 100%;}}
+
+  html, body {margin: 0px;
+ height: 100%;}
+
+body#fondoportada {background-image: url("imagenes/fondouno.jpg");
+    background-repeat: no-repeat;
+background-position: absolute;}
+
+ body#fondo {background-image: url("imagenes/fondo.jpg");
+background-repeat: no-repeat;
+background-position: absolute;
+}
+
+body#fondo2 {background-image: url("imagenes/fondodos.jpg");
+background-repeat: no-repeat;
+background-position: absolute;}
+
+
+.titulo {text-align: center;
+          margin-top: 440px;
+          padding-left: 20px;
+          font-size: 37.3pt;
+          font-family:'Anton', sans-serif;
+          line-height: 52px;
+          box-sizing: border-box;}
+
+p a {color: black;}
+
+li a span {color: #8918cc;
+font-style: bold;}
+
+a {color: #1e052d;}
+
+.texto, .texto2 { text-align: center;
+          margin-top: 90px;
+          font-size:22pt;
+          font-family:'opensans', sans-serif;
+          font-style: bold;
+          box-sizing: border-box;
+          text-decoration: none;} 
+
+.polleraytop, .jeanyremera { border: none;
+  margin-top: 30px;
+  text-align: center;
+  font-family:'opensans', sans-serif;
+  cursor: default;
+  display: inline-block;
+  text-decoration: none;}
+
+.polleraytop {padding-left: 13%;}
+
+.jeanyremera {padding-right: 14%}
+
+
+.contain {
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.contain:hover .image {
+  opacity: 0.6;
+}
+
+.contain:hover .overlay {
+  opacity: 1;
+  opacity: 80%;
+}
+
+.text {
+  color: white;
+  font-family:'opensas', sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  position: absolute;
+  top: 53%;
+  left: 62%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text2 {
+  color: white;
+  font-family:'opensas', sans-serif;
+  font-size: 18px;
+  position: absolute;
+  top: 53%;
+  left: 36%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+button 
+{margin: 20px 20px 0px 50px;
+width: 100px;
+height: 45px;
+font-family:'opensas', sans-serif;
+font-size: 15.5px;
+border: none;
+border-radius: 4px;
+padding: 5px;
+display: inline-block;
+text-decoration: none;}
+
+
+.boton1 {margin-top: 30px;
+      padding-left: 24.5%;}
+
+ .boton2 {margin-top: 30px;
+      padding-left: 11%;
+    }
+
+.seguir {margin-top: 12px;
+  border: none;
+  padding: 5px;
+  font-family:'opensans', sans-serif;
+  color: violet;
+  text-align: right;
+  cursor: default;
+  display: inline-block;
+  text-decoration: none;}
+
+.boton {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  border: none;
+  color: #FFFFFF;
+  font-family:'opensas', sans-serif;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+  width: 165px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.boton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.boton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.boton:hover span {
+  padding-right: 15px;
+}
+
+.boton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.audio {text-align: center;
+        margin-top: -10px;}
+
+.pibaclick{
+  width: 110px;
+  height: 299px;
+  background-image: url("imagenes/pibacaminando.png");
+  margin-top: 125px;
+  position: relative;
+  -webkit-animation: mymove 4s infinite forwards;  /* Chrome, Safari, Opera */
+  -webkit-animation-play-state: paused;  /* Chrome, Safari, Opera */
+  animation: mymove 15s 1 forwards;
+  animation-play-state: paused;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 90%;}
+}
+
+
+.pibaclick2{
+  width: 110px;
+  height: 299px;
+  background-image: url("imagenes/pibacaminando2.png");
+  margin-top: 125px;
+  position: relative;
+  -webkit-animation: mymove 4s infinite forwards;  /* Chrome, Safari, Opera */
+  -webkit-animation-play-state: paused;  /* Chrome, Safari, Opera */
+  animation: mymove 15s 1 forwards;
+  animation-play-state: paused;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 90%;}
+}
+
+/*PIBA*/
+
+.full-height {height: 100%}
+
+#piba {background-image: url("imagenes/pibacaminando.png");
+width: 8%;
+height: 50%;
+margin-top: 115px;}
+
+#piba:hover {animation-name: objseis;
+animation-duration: 10s;
+animation-iteration-count: 1 forwards;
+position: relative;
+}
+
+#piba2 {background-image: url("imagenes/pibacaminando2.png");
+width: 8%;
+height: 50%;
+margin-top: 125px;}
+
+#piba2:hover {animation-name: objseis;
+animation-duration: 15s;
+animation-iteration-count: 1;
+position: relative;
+}
+
+@keyframes objseis {
+  0%   {left: 0%; top:0%;}
+  100% {left:100%; top:0%;}
+}
+
+ /*VIEJA*/
+
+.vieja {
+  margin-top: -255px;
+padding-left: 86%;}
+
+.tooltip2 {
+  position: relative;
+  display: inline-block;
+  color: transparent;
+  top: 0px;
+}
+
+.tooltip2 .tooltiptext2 {
+  visibility: hidden;
+  width: 120px;
+  background-color: #1e052d;
+  color: #fff;
+  font-family:'opensas', sans-serif;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+ 
+}
+
+.tooltip2:hover .tooltiptext2 {
+  visibility: visible;
+}
+
+/*PIBEACOSADOR*/
+
+#pibe {background-image: url("imagenes/pibeacosador.png");
+width: 8%;
+height: 50%;
+position: relative;
+margin-top: -300px;
+-webkit-animation-name: example;
+-webkit-animation-duration: 40s;
+animation-name: example;
+animation-duration: 40s;
+animation-iteration-count: 1;
+}
+
+@-webkit-keyframes example {
+  from {right: 0%;}
+  to {right: 100%;}
+}
+
+@keyframes example {
+  from {right: 0%;}
+  to {right: 100%;}
+}
+
+/*TOOLTIP */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  color: transparent;
+  top: -150px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #1e052d;
+  color: #fff;
+  font-family:'opensas', sans-serif;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  transition-duration: 5;
+}
+
+
+/*AUTITO*/
+
+#auto {background-image: url("imagenes/elautito.png");
+width: 100px;
+height: 300px;
+position: relative;
+margin-top: -175px;
+-webkit-animation-name: example;
+-webkit-animation-duration: 6s;
+animation-name: example;
+animation-duration: 6s;
+animation-fill-mode: forwards;
+animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes example {
+  from {right: -90%;}
+  to {right: 50%;}
+}
+
+@keyframes example {
+  from {right: -90%;}
+  to {right: 50%;}
+}
+
+.texto2, .texto {float: center;
+  border: 2px solid gray;
+  padding: 8px;
+  background-color: white;
+  font-family:'opensas', sans-serif;
+  font-size: 24px;
+  opacity: 80%;
+}
+
+.info {margin-top: 300px;
+  margin-left: 10%;
+  color: #ffffff;
+  border: none;
+  padding: 15px 32px;
+  font-family:'opensas', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+.tooltip3 {
+  position: relative;
+  display: inline-block;
+  color: transparent;
+  top: 20px;
+  right: 150px;}
+
+.tooltip3 .tooltiptext3 {
+  visibility: hidden;
+  width: 750px;
+  background-color: #1e052d;
+  color: #fff;
+  font-family:'opensas', sans-serif;
+  text-align: left;
+  line-height: 25px;
+  border-radius: 6px;
+  padding: 5px 0 ;
+  padding-right: 15px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip3:hover .tooltiptext3 {
+  visibility: visible;
+  opacity: 1;
+}

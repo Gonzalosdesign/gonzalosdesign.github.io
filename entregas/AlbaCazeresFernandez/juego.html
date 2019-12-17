@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>Género en la política</title>
+      <link rel="stylesheet" type="text/css" href="estilo.css">
+    </head>
+
+
+  <body class="fondocarrera">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12">
+          <div class="timer">
+              <span></span>
+          </div>
+
+          <h3>Haz click sobre los personajes para que avancen</h3>
+        </div>
+
+        <div class="col-12" id="hombre" onmouseup="mouseUpH()" onmouseleave="mouseDownH()">
+          <img class="pointer" src="img/hombre.png">
+        </div>
+
+        <div class="col-12" id="mujer" onmouseup="mouseUpM()" onmouseleave="mouseDownM()">
+          <img class="pointer" src="img/mujer.png">
+        </div>
+
+        <div class="gameover">
+
+          <input type="button" class="boton2" value="Intentar de nuevo" onclick="window.location.href='juego.html'" />
+
+          <input type="button" class="boton2" value="Finalizar" onclick="window.location.href='reflexion.html'" />
+        </div>
+      </div>
+    </div>
+        
+
+    <script>
+
+      function mouseDownH() {
+        document.getElementById("hombre").style.WebkitAnimationPlayState = "paused";
+        document.getElementById("hombre").style.AnimationPlayState = "paused";
+      }
+
+      function mouseUpH() {
+        document.getElementById("hombre").style.WebkitAnimationPlayState = "running";
+        document.getElementById("hombre").style.AnimationPlayState = "running";
+      }
+
+      function mouseDownM() {
+        document.getElementById("mujer").style.WebkitAnimationPlayState = "paused";
+        document.getElementById("mujer").style.AnimationPlayState = "paused";
+      }
+
+      function mouseUpM() {
+        document.getElementById("mujer").style.WebkitAnimationPlayState = "running";
+        document.getElementById("mujer").style.AnimationPlayState = "running";
+      }
+    </script>
+  </body>
+</html>

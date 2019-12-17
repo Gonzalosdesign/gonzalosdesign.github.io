@@ -1,0 +1,55 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+ 
+</head>
+    <body onLoad="redireccionar()">
+  
+        
+    <div class="sol">
+            <ul class="sun">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+          </ul>
+             <div class="contenedor-sol">
+                 <h1>¡Viva tú!</h1>
+                  <p>Gracias a personas como tú la tierra seguirá latiendo.</p>
+             </div>
+         </div>
+          <script>
+            function myMove() {
+              var elem = document.getElementById("myAnimation");   
+              var pos = 0;
+              var id = setInterval(frame, 10);
+              function frame() {
+                if (pos == 350) {
+                  clearInterval(id);
+                } else {
+                  pos++; 
+                  elem.style.top = pos + 'px'; 
+                  elem.style.left = pos + 'px'; 
+                }
+              }
+            }
+            </script>
+             <script language="JavaScript">
+  function redireccionar() {
+    setTimeout("location.href='index.html'", 5000);
+  }
+  </script>
+    </body>
+</html>

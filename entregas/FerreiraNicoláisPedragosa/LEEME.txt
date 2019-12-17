@@ -1,0 +1,10 @@
+Buenas! Acá van una aclaración sólo por las dudas.
+
+Estamos seguras las página funciona perfectamente en
+navegadores como • Google Chrome Versión 72.0.3626.109 (64-bit) 
+                 • Firefox Versión 69.0.3 (64-bit) 
+                 • Opera Version 65.0.3467.48 (64-bit)
+siendo Google Chrome el más preferible para uso.
+En Internet Explorer, incluso en su versión más reciente no
+funciona correctamente.
+ 

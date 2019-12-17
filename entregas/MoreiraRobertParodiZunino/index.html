@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.js"></script>
+	
+</head>
+<body id="reportado">
+	<div class="container">
+
+
+
+		<div class="row">
+		
+			<div class="columnatwitter centro">
+
+				<a href="index.html"><img src="img/inicio.PNG" class="menus"></a>
+
+				<img src="img/tweetear.PNG" class="margen">
+
+             	<div class="hideme">
+					<img src="img/tweet0.png">
+				</div>
+
+				<div class="hideme">
+					<img src="img/tweet1.png">
+				</div>
+
+				<div class="hideme">
+					<img src="img/tweet2.png">
+				</div>
+
+				<div class="hideme">
+					<img src="img/tweet3.png">
+				</div>
+
+				<div class="hideme">
+					<img src="img/tweet4.png">
+				</div>
+
+				<div class="hideme">
+					<img src="img/tweet5.png">
+				</div>
+
+				<div class="hideme">
+					<a href="#popup1">
+						<div class="borde">
+							<img src="img/tweet6.png">
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+
+<div id="popup1" class="overlay">
+		<div class="popup">
+		<h2>¿Deseo intervenir?</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+		<a href="report.html" class="button">Si</a>
+        <a href="home.html" class="button">No</a>
+		</div>
+		</div>
+
+		<script type="text/javascript">$(function(){  // $(document).ready shorthand
+  $('.monster').fadeIn('slow');
+});
+
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1','padding':'0'},400);
+
+            }
+            
+        }); 
+    
+    });
+    
+});</script>
+
+</body>
+</html>

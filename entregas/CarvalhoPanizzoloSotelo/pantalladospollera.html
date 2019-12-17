@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body id="fondo">
+<div class="container">
+	<div class="row">
+
+       <div class="col-12 seguir">
+         <button class="boton" type="button" style="vertical-align:middle"><a href="pantallatrespollera.html"><span>Seguir caminando</span></a></button>
+    </div>
+
+    <div class="col-12 audio">
+<audio controls loop>
+  <source src="bocina.mp3" type="audio/mpeg">
+</audio>
+</div>
+
+<div class="col-12">  
+<div id="myP" class="pibaclick" onmouseup="mouseUp()"></div>
+</div>
+<script>
+
+function mouseUp() {
+  document.getElementById("myP").style.WebkitAnimationPlayState = "running"; // Code for Chrome, Safari, and Opera
+  document.getElementById("myP").style.AnimationPlayState = "running";
+
+}
+</script>
+
+<div class="row full-height">
+    <div id="auto" class="col-12">
+     <img src="imagenes/elautito.png"/>
+     </div>
+        </div>
+      
+</div><!--cierredivcontainer-->
+</div><!--cierredivrow-->
+</body>
+</html>

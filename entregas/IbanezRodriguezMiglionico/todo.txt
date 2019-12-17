@@ -1,0 +1,11 @@
+To Do:
+
+-Agregar audio de fondo
+-Agregar ladridos y sonidos a los perros con hover
+-Adaptar las pagina a todas las pantallas
+-Generar visualmente más dramatismo y frustración
+-Guiar mejor al usuario con recursos visuales y textos
+-Animación y transiciones en los perros
+-Que sea mayor la frustración
+-Guiar un poco mejor al usuario con recursos visuales o textos
+-Hover con audio al pasar por lo perros

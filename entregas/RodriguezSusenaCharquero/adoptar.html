@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>LLEVAME A UN HOGAR</title>
+<link rel="icon" type="image/png" href="images/fav.png" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bouton.js"></script>
+<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
+<script type="text/javascript" src="./script.js"></script>
+
+	<script type="text/javascript">
+				if (window.innerWidth <= 1024){
+$(location).attr('href', 'http://www.cyclemon.com/mobile/');
+
+				}
+$(window).load(function(){
+	$('body, html').scrollTop(0);
+	$("#loader").fadeToggle({display:"none"}, "slow");
+});
+</script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+  $('#fondo1').parallax("50%", 0.5);
+  $('#fondo2').parallax("50%", 0.5);
+  $('#fondo3').parallax("50%", 0.5);
+	$('#fondo4').parallax("50%", 0.5);
+
+
+
+	$('#intro a,#nav li a,#exp,#fondo2 a').click(function(){
+                var el = $(this).attr('href');
+                var elWrapped = $(el);
+                scrollToDiv(elWrapped,40);
+                return false;
+            });
+
+            function scrollToDiv(element,navheight){
+                var offset = element.offset();
+                var offsetTop = offset.top;
+                var totalScroll = offsetTop - $("header").outerHeight() + "px";
+
+                $('body,html').animate({scrollTop: totalScroll}, 700);
+
+            }
+
+		$("#n1").css({opacity:'1'}, 1);
+
+			$("#n1").hover(function(){
+       		$("#b1").fadeToggle(0.5);
+	  });
+	  		$("#n2").hover(function(){
+       		$("#b2").fadeToggle(0.5);
+	  });
+			$("#n3").hover(function(){
+       		$("#b3").fadeToggle(0.5);
+	  });
+	  		$("#n4").hover(function(){
+       		$("#b4").fadeToggle(0.5);
+	  });
+	  		$("#n5").hover(function(){
+       		$("#b5").fadeToggle(0.5);
+	  });
+			$("#n6").hover(function(){
+       		$("#b6").fadeToggle(0.5);
+	  });
+	  		$("#n7").hover(function(){
+       		$("#b7").fadeToggle(0.5);
+	  });
+	  		$("#n8").hover(function(){
+       		$("#b8").fadeToggle(0.5);
+	  });
+	  		$("#n9").hover(function(){
+       		$("#b9").fadeToggle(0.5);
+	  });
+	  		$("#n10").hover(function(){
+       		$("#b10").fadeToggle(0.5);
+	  });
+	  		$("#n11").hover(function(){
+       		$("#b11").fadeToggle(0.5);
+	  });
+	  		$("#n12").hover(function(){
+       		$("#b12").fadeToggle(0.5);
+	  });
+	  		$("#n13").hover(function(){
+       		$("#b13").fadeToggle(0.5);
+	  });
+	  		$("#n14").hover(function(){
+       		$("#b14").fadeToggle(0.5);
+	  });
+	  		$("#n15").hover(function(){
+       		$("#b15").fadeToggle(0.5);
+	  });
+	  		$("#n16").hover(function(){
+       		$("#b16").fadeToggle(0.5);
+	  });
+	  		$("#n17").hover(function(){
+       		$("#b17").fadeToggle(0.5);
+	  });
+	  		$("#n18").hover(function(){
+       		$("#b18").fadeToggle(0.5);
+	  });
+	  		$("#n19").hover(function(){
+       		$("#b19").fadeToggle(0.5);
+	  });
+	  		$("#n20").hover(function(){
+       		$("#b20").fadeToggle(0.5);
+	  });
+
+        });
+
+
+</script>
+
+</head>
+
+
+<body>
+
+	<div id="intro">
+    <a href="#fond19"><img alt="fleche" src="images/fleche2.png"></a>
+ </div>
+
+
+
+     <div alt="you're a night rider" id="fondo1">
+
+       <div class="bg"></div>
+       <div class="textoboton">
+       <a onclick="myFunction1()">SABER MÁS</a>
+       <div id="myDropdown1" class="texto">
+           <p>15.000 perros actualmente están abandonados en las calles de Montevideo. En 2035 habrá 3 millones de perros, cada año aumenta en unos 75.000, los cuales uno de cada 10 será vagabundo.</p>
+       </div>    </div>
+
+       <p class="bloque1">NO SE DONDE ME ENCUENTRO, NO TENEMOS DONDE VIVIR, SOMOS YO Y MIS CINCO HERMANOS. ¿QUE ES TODA ESA BASURA? ¡TENGO HAMBRE MAMI! ¡ME ASUSTAN ESOS AUTOS! ¡TENGO FRIO MAMI!</p></div>
+	    </div>
+
+
+
+
+	<div id="fondo2">
+    <div class="bg"></div>
+    <div class="textoboton">
+    <a onclick="myFunction2()">SABER MÁS</a>
+    <div id="myDropdown2" class="texto">
+        <p>El mayor porcentaje de perros abandonados es adulto, y en general de tamaño medio a grande.
+Estos mismos perros son los que menos se adoptan, ya que la gente prefiere adoptar cachorros, y de menor tamaño. Los refugios dan cuidados veterinarios cuando los animales llegan, muchas veces en muy malas condiciones.
+</p>
+    </div> </div>
+    <p class="bloque1">UNAS PERSONAS RECIÉN ME TRAJERON, DICEN QUE ACÁ VOY A PASAR MIS DÍAS UN POCO MEJOR Y QUE ME VAN A DAR COMIDA Y PROTECCIÓN. AUNQUE MI MAMI NO PUDO LLEGAR… LA EXTRAÑO MUCHO.  </p></div>
+    </div>
+
+
+
+	<div id="fondo3">
+		<div class="bg"></div>
+    <div class="textoboton">
+    <a onclick="myFunction3()">SABER MÁS</a>
+    <div id="myDropdown3" class="texto">
+        <p>Cada diez adopciones, entre dos y tres no pueden adaptarse y terminan regresando a los refugios. El estrés por abandono afecta al 15% de los perros. La mayoria de los refugios en Uruguay se financian integramente por donaciónes.
+</p>
+    </div> </div>
+    <p class="bloque1">HOY VIENEN “LAS PERSONAS”. DICEN QUE YA ESTOY SANO Y PREPARADO. SI TE ELIGEN TE DAN COMIDA, JUGUETES Y HASTA UN LUGAR CALENTITO PARA DORMIR. ¡ESPERO TENER SUERTE!</p></div>
+    </div>
+
+
+
+	<div alt="you're a hipster" id="fondo4">
+		<div class="bg"></div>
+    <div class="textoboton">
+    <a onclick="myFunction4()">SABER MÁS</a>
+    <div id="myDropdown4" class="texto">
+        <p>Un cuidado responsable implica proporcionarles alojamiento, no dejarlo suelto en lugares públicos, abrigo, alimento e higiene.</p>
+    </div> </div>
+    <p class="bloque1">¡NO PUEDO ESTAR MÁS CONTENTA DE ESTAR ACÁ! YA NO PASO HAMBRE NI FRÍO. ME LLAMAN YECA, YA QUE ES EL LUGAR DEL QUE PROVENGO, PERO DESEO NUNCA TENER QUE VOLVER.</p></div>
+
+  </div>
+  </div>
+
+
+
+<footer>
+<div>
+
+    <img class="roccogif" src="images/roccogif.png"></div>
+<div>
+    <p class="reflexion">VOS PODÉS CAMBIAR EL DESTINO DE UN ANIMAL. NO COMPRES MASCOTAS ¡ADOPTÁ! </p>
+    <a href="comprar.html"><button class="button"><p> VER LA HISTORIA DE
+      ROCCO </p></button></a>
+  </div>
+</div>
+</footer>
+
+
+       <script>
+	   $("#share").hover(function() {
+  $("#content").toggle('slide');
+  $("#share a").animate({opacity:'1'}, 1);
+});
+	$("#share").mouseleave(function() {
+	$("#share a").animate({opacity:'0.4'}, 1);
+
+	});
+	$("#fond19 p").hover(function() {
+  $("#fond19 p").animate({opacity:'0.6'}, "fast");
+});
+	$("#fond19 p").mouseout(function() {
+	$("#fond19 p").animate({opacity:'1'}, 100);
+
+	});
+$(function () {
+	var element = $("#cl");
+    (function(){
+        element
+
+            .animate({ opacity:'0.4'},"slow")
+            .animate({ opacity:'0.8'},"slow",arguments.callee)
+
+    }());
+});
+
+	   </script>
+</body>
+
+</html>

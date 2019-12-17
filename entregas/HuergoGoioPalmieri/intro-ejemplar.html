@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, incial-scale=1.0">
+    <title>Respetable</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+ 
+  </head>
+  <!--I am in love to your body-->
+  <body class="respetable barraou hidden" id="bodyrespetable">  
+    <!--apertura de div container o "estantería"-->
+    <div class="container">
+      <div class="row">
+        <!--Div de la Segunda fase de la interaccion-->
+        <div class="row">
+          <div class="col-12 primerafase" id="fase1">
+            <div class="row ti2">
+              <div class="col-12" id="titulobye2">          	
+                <h1 class="menosbotton fadein2" id="titulox1" >¡Gracias por elegirme!</h1>
+                <h2 class="mastop1 fadein2" id="subtitulox1">¡Vamos a limpiar la cuidad juntos!.</h2>            
+              </div>           
+            </div>
+            <!--Botones selectores para hacer aparecer el boton correcto-->
+            <div class="row diver">
+            	<div class="col-12"  id="diverbye">
+    	          <div class="col-4 icon corredoraimg left2" id="icono1">	          		          		                     
+    	          </div>
+    	           <div class="col-8 divergencia fadein2">
+                  <h2 class="primeravez">¿Es la primera vez que nos conocemos?</h2>
+                  <div class="center">
+    	           	   <button class="iframebutton si inline" id="si" onclick="alrecorrido()">Si</button>	
+                    <button class="iframebutton no inline" id="no" onclick="divergencia()">No</button>
+                  </div>            		            
+    	          </div>	           
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Temporal para avisar que se puede volver a origen desde un boton fixed, ya que haciendo scroll no se sale en esta parte-->
+        <div class="row">
+          <div class="col-12 temporal downup4 cuarto " id="temporal4">
+            <img class="flecha2 rightleft inline" src="img/abajoa.png">
+            <h1 class="espaciotop2 inline">Cuando lo desees podrás volver al incio desde aquí.</h1>
+            <h2 class="menostop">Por el momento no podras Deslizar para salir de la Pantalla completa.</h2>
+            <button class="consejobye button drink0 menostop2" id="bb4" onclick="consejobye4()">Entendido</button>                         
+          </div>           
+        </div>
+        <!--Botones para ir redirigir a index-posicion fixed-->
+        <div class="row">
+          <div class="col-12">
+            <a class="iframebutton volverindex" id="queganasdevolver" href="index.html"></a>
+            <img class="flecha outside" id="flechadown" src="img/abajoa.png" >
+          </div>
+        </div>
+        <!--Botones para elegir si ir al juego directo o recorrer el camino-->
+        <div class="row">
+        	<div class="col-12" >
+        		<a href="juego-avanzado.html" class=" button bye offsettop2 irjuego juntos" id="pastillaroja">Ir al juego</a> 
+            <button class="button bye offsettop2 juntos" id="pastillaazul" onclick="way1()">Hacer el recorrido con Lucia</button>
+        	</div>
+       	</div>
+        <!--Div de la Segunda fase de la interaccion-->
+        <div class="row">            
+          <div class="col-12 segundafase preubicar" id="fase2">            
+              <div class="row ti2">
+                <div class="col-12" id="">            
+                  <h1 class="menosbotton fadeout3" id="titulox2" >El excremento de los no presenta un peligro para los seres humanos.</h1>                
+                  <h1 class="mastop fadeout3" id="mensaje">¡Vamos, seguro la sabes!.</h1> 
+                  <h1 class="mastop nop" id="feed1">¡Vamos, seguro la sabes!.</h1>                             
+                </div>           
+              </div>
+              <!--Botones selectores para hacer aparecer el boton correcto-->
+              <div class="row" id="lostruefalse">
+                <div class="col-12 truefalse"  id="">
+                  <div class="col-6" id="">
+                    <button class="true overtrue size1 marginl fadeout3" id="verdadero" onclick="verdadero()"></button>                    
+                  </div>
+                  <div class="col-6">
+                    <button class="false overfalse size1 marginr fadeout3" id="falso" onclick="falso()"></button>                   
+                  </div>                            
+                </div>              
+                <div class="col-12 infodown" id="">
+                  <p class="menostop menosbotton fadeout3 inline" id="tocatrue">True</p>
+                  <p class="menostop menosbotton fadeout3 inline" id="toca">Toca para seleccionar.</p>
+                  <p class="menostop menosbotton fadeout3 inline" id="tocafalse">False</p>                
+                  <h3 class="menosbotton menostop" id="infoextra"></h3>
+                  <h2 class="fadeout3 menostop" id="subtitulox2">Contesta si te parece verdadero o falso.</h2>
+                </div>
+                <div class="col-12" id="">
+                  <img class="flecha outside2" id="flechadown2" src="img/abajoa.png" >
+                </div>                
+              </div>                                    
+              <div class="row">
+                <div class="col-12 icon2 corredoraimg nop" id="yacasiestamos">                                                   
+                </div>
+                <div class="col-12" id="">
+                <a href="juego-avanzado.html" class=" button nop" id="jugar2"> A jugar!</a>
+              </div>                                                               
+            </div>
+          </div>                    
+        </div>
+        
+       	      
+      </div><!--cierre de div row-->
+    </div><!--cierre de div container o "estantería"-->
+  </body> 
+
+<script>
+  function consejobye4() {
+    var element = document.getElementById("temporal4");        
+    element.classList.add("uppage4");             
+  }
+  function divergencia() {
+    var element = document.getElementById("titulobye2");        
+    element.classList.add("fadein");    
+    var element = document.getElementById("diverbye");        
+    element.classList.add("fadeout2");
+    var element = document.getElementById("pastillaroja");        
+    element.classList.add("entradaright100");
+    var element = document.getElementById("pastillaazul");        
+    element.classList.add("entradaright100"); 
+    document.getElementById("titulox1").innerHTML = "¡Tu decides!";
+    document.getElementById("subtitulox1").innerHTML = "Recuerda que lo importante es el camino.";
+  }
+   function way1() {    
+    document.getElementById("titulox1").innerHTML = "Derribemos mitos con información.";
+    document.getElementById("subtitulox1").innerHTML = "Desliza hacia abajo para hacerlo juntos.";  
+    var element = document.getElementById("titulobye2");        
+    element.classList.add("fadein2-1");     
+    var element = document.getElementById("pastillaroja");
+    element.classList.remove("entradaright100");    
+    var element = document.getElementById("pastillaazul");        
+    element.classList.remove("entradaright100");
+    var element = document.getElementById("flechadown");        
+    element.classList.add("updown5");
+    element.classList.add("fijo");
+     var element = document.getElementById("fase1");        
+    element.classList.add("background2");
+    var element = document.getElementById("bodyrespetable");        
+    element.classList.remove("hidden");    
+   }
+   function alrecorrido() {
+    document.getElementById("titulox1").innerHTML = "Derribemos mitos con información.";
+    document.getElementById("subtitulox1").innerHTML = "Desliza hacia abajo para hacerlo juntos."; 
+    var element = document.getElementById("titulobye2");        
+    element.classList.add("fadein2-1");    
+    var element = document.getElementById("diverbye");        
+    element.classList.add("fadeout2");
+    var element = document.getElementById("flechadown");        
+    element.classList.add("updown5");
+    element.classList.add("fijo");
+     var element = document.getElementById("fase1");        
+    element.classList.add("background2");
+    var element = document.getElementById("bodyrespetable");        
+    element.classList.remove("hidden");
+   }
+
+   function verdadero() {
+    var element = document.getElementById("jugar2");    
+    element.classList.remove("nop");
+    document.getElementById("subtitulox2").innerHTML = "Desliza hacia abajo para ir hacia el juego.";    
+    document.getElementById("verdadero").innerHTML = "Falso";
+    document.getElementById("feed1").innerHTML = "¡No te preocupes, lo importante es que ahora ya lo sabes!.";
+    var element = document.getElementById("feed1");        
+    element.classList.remove("nop");
+    element.classList.add("fadein");
+    var element = document.getElementById("subtitulox2");        
+    element.classList.add("amarillo");
+    var element = document.getElementById("verdadero");        
+    element.classList.add("seleccionadolfalse");
+    element.classList.remove("overtrue");
+    var element = document.getElementById("falso");        
+    element.classList.add("noseleccionadofalse");
+    var element = document.getElementById("flechadown2");        
+    element.classList.add("updown7");
+    var element = document.getElementById("mensaje");        
+    element.classList.add("nop");
+    var element = document.getElementById("toca");        
+    element.classList.add("outside3");
+    var element = document.getElementById("tocatrue");        
+    element.classList.add("outside3");
+    var element = document.getElementById("tocafalse");        
+    element.classList.add("outside3");
+    var element = document.getElementById("bodyrespetable");
+    element.classList.remove("hidden");
+    document.getElementById("infoextra").innerHTML = "El conocimiento del riesgo de contagio de patógenos asociados a las heces caninas es fundamental para contribuir a su prevención.";        
+  }
+   function falso() { 
+    var element = document.getElementById("jugar2");    
+    element.classList.remove("nop");       
+    document.getElementById("feed1").innerHTML = "¡Exelente respuesta!.";
+    document.getElementById("subtitulox2").innerHTML = "Desliza hacia abajo para ir hacia el juego.";
+    document.getElementById("falso").innerHTML = "Falso";
+    var element = document.getElementById("feed1");        
+    element.classList.remove("nop");
+    element.classList.add("fadein");
+    var element = document.getElementById("mensaje");        
+    element.classList.add("nop");    
+    var element = document.getElementById("subtitulox2");        
+    element.classList.add("amarillo");
+    var element = document.getElementById("falso");        
+    element.classList.add("seleccionadortrue");
+    element.classList.remove("overfalse");
+    var element = document.getElementById("verdadero");        
+    element.classList.add("noseleccionadotrue");
+    var element = document.getElementById("flechadown2");        
+    element.classList.add("updown7");
+    var element = document.getElementById("toca");        
+    element.classList.add("outside3");
+    var element = document.getElementById("tocatrue");        
+    element.classList.add("outside3");
+    var element = document.getElementById("tocafalse");        
+    element.classList.add("outside3");
+    var element = document.getElementById("bodyrespetable");
+    element.classList.remove("hidden");
+    document.getElementById("infoextra").innerHTML = "El conocimiento del riesgo de contagio de patógenos asociados a las heces caninas es fundamental para contribuir a su prevención.";         
+  }
+  //Comienzo del PARALLAX--------------------------------------------------------------------------------- 
+window.onscroll = function() {down2()};
+function down2() {
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0 ) {    
+   var element = document.getElementById("fase1");        
+    element.classList.add("fijo");
+    var element = document.getElementById("queganasdevolver");        
+    element.classList.add("aunnotehasido");
+  }
+  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+    var element = document.getElementById("flechadown");                        
+          element.classList.add("nop");
+  } 
+  else {
+    var element = document.getElementById("flechadown");
+ } 
+ if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    var element = document.getElementById("titulox1");                        
+          element.classList.add("up1");
+          var element = document.getElementById("subtitulox1");                        
+          element.classList.add("dow1");         
+  } 
+  else {
+    var element = document.getElementById("titulox1");
+          element.classList.remove("up1");
+          var element = document.getElementById("subtitulox1");
+          element.classList.remove("dow1");         
+ }
+ if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    var element = document.getElementById("titulox1");                        
+          element.classList.add("up2");
+          var element = document.getElementById("subtitulox1");                        
+          element.classList.add("dow2");
+  } 
+  else {
+    var element = document.getElementById("titulox1");
+          element.classList.remove("up2");
+          var element = document.getElementById("subtitulox1");                        
+          element.classList.remove("dow2");
+ }
+ if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    var element = document.getElementById("titulox1");                        
+          element.classList.add("up3");
+          var element = document.getElementById("subtitulox1");                        
+          element.classList.add("dow3");          
+  } 
+  else {
+    var element = document.getElementById("titulox1");
+          element.classList.remove("up3");
+          var element = document.getElementById("subtitulox1");                        
+          element.classList.remove("dow3");
+          
+ }
+ if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    var element = document.getElementById("titulox1");                        
+          element.classList.add("up4");
+          var element = document.getElementById("subtitulox1");                        
+          element.classList.add("dow4");
+  } 
+  else {
+    var element = document.getElementById("titulox1");
+          element.classList.remove("up4");
+           var element = document.getElementById("subtitulox1");                        
+          element.classList.remove("dow4");
+ }
+ if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+    var element = document.getElementById("titulox1");                        
+          element.classList.add("up5");
+          var element = document.getElementById("subtitulox1");                        
+          element.classList.add("dow5");          
+  } 
+  else {
+    var element = document.getElementById("titulox1");
+          element.classList.remove("up5");
+          var element = document.getElementById("subtitulox1");                        
+          element.classList.remove("dow5");
+          
+ }
+ if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+    var element = document.getElementById("titulox1");                        
+          element.classList.add("up6");
+          var element = document.getElementById("subtitulox1");                        
+          element.classList.add("dow6");           
+  } 
+  else {
+    var element = document.getElementById("titulox1");
+          element.classList.remove("up6");
+          var element = document.getElementById("subtitulox1");
+          element.classList.remove("dow6");         
+ }
+ if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+    var element = document.getElementById("titulox1");                        
+          element.classList.add("up7");
+           var element = document.getElementById("subtitulox1");                        
+          element.classList.add("dow7");         
+  } 
+  else {
+    var element = document.getElementById("titulox1");
+          element.classList.remove("up7");
+          var element = document.getElementById("subtitulox1");
+          element.classList.remove("dow7");           
+ }
+ if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+    var element = document.getElementById("titulox1");                        
+          element.classList.add("up8");
+            var element = document.getElementById("subtitulox1");                        
+          element.classList.add("dow8");
+  } 
+  else {
+    var element = document.getElementById("titulox1");
+          element.classList.remove("up8");
+          var element = document.getElementById("subtitulox1");                        
+          element.classList.remove("dow8");
+ }
+ if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+    var element = document.getElementById("titulox1");                        
+          element.classList.add("up9");
+          var element = document.getElementById("subtitulox1");                        
+          element.classList.add("dow9");          
+  } 
+  else {
+    var element = document.getElementById("titulox1");
+          element.classList.remove("up9");
+          var element = document.getElementById("subtitulox1");                        
+          element.classList.remove("dow9");          
+ }
+ if (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
+    var element = document.getElementById("titulox1");                        
+          element.classList.add("up10");
+          var element = document.getElementById("subtitulox1");                        
+          element.classList.remove("dow10");  
+    var element = document.getElementById("queganasdevolver");        
+    element.classList.remove("aunnotehasido");
+  } 
+  else {
+    var element = document.getElementById("titulox1");
+          element.classList.remove("up10");
+           var element = document.getElementById("subtitulox1");                        
+          element.classList.remove("dow10");        
+ }
+ if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
+    var element = document.getElementById("titulox1");                        
+          element.classList.add("up11");
+          var element = document.getElementById("subtitulox1");                        
+          element.classList.remove("dow11");  
+  } 
+  else {
+     var element = document.getElementById("titulox1");
+          element.classList.remove("up11");
+           var element = document.getElementById("subtitulox1");                        
+          element.classList.remove("dow11");          
+ } 
+ if (document.body.scrollTop > 1300 || document.documentElement.scrollTop > 1300) {
+     var element = document.getElementById("fase1");        
+    element.classList.remove("fijo");
+  } 
+  else {   
+ }
+ //Dejando anclada la segunda parte de la interfaz 
+ if (document.body.scrollTop > 1350 || document.documentElement.scrollTop > 1350) {
+  var element = document.getElementById("fase2");
+    element.classList.remove("preubicar"); 
+    element.classList.add("ubicar");        
+    element.classList.add("fijo");           
+ }
+  else {
+    var element = document.getElementById("fase2");
+    element.classList.remove("ubicar");        
+    element.classList.remove("fijo");       
+ }
+ if (document.body.scrollTop > 1550 || document.documentElement.scrollTop > 1550) {
+    var element = document.getElementById("subtitulox2");
+    element.classList.add("fadein");
+    element.classList.remove("fadeout3");       
+    var element = document.getElementById("titulox2");    
+    element.classList.add("fadein");
+    element.classList.remove("fadeout3");
+    var element = document.getElementById("falso");
+    element.classList.add("fadein");
+    element.classList.remove("fadeout3");
+    var element = document.getElementById("verdadero");
+    element.classList.remove("fadeout3");
+    element.classList.add("fadein");
+    var element = document.getElementById("mensaje");
+    element.classList.add("fadein");
+    element.classList.remove("fadeout3");
+     var element = document.getElementById("toca");
+    element.classList.add("fadein");
+    element.classList.remove("fadeout3");
+    var element = document.getElementById("tocatrue");        
+    element.classList.add("fadein");
+    element.classList.remove("fadeout3");
+    var element = document.getElementById("tocafalse");        
+    element.classList.add("fadein");
+    element.classList.remove("fadeout3");  
+  } 
+  else {
+    var element = document.getElementById("subtitulox2");    
+    element.classList.remove("fadein");
+    element.classList.add("fadeout3");
+    var element = document.getElementById("titulox2");    
+    element.classList.remove("fadein");
+    element.classList.add("fadeout3");
+    var element = document.getElementById("falso");
+    element.classList.remove("fadein");
+    element.classList.add("fadeout3");
+    var element = document.getElementById("verdadero");
+    element.classList.remove("fadein");
+    element.classList.add("fadeout3");    
+    var element = document.getElementById("mensaje");
+    element.classList.remove("fadein");
+    element.classList.add("fadeout3");
+     var element = document.getElementById("toca");
+    element.classList.remove("fadein");
+    element.classList.add("fadeout3");
+    var element = document.getElementById("tocatrue");        
+    element.classList.remove("fadein");
+    element.classList.add("fadeout3");
+    var element = document.getElementById("tocafalse");        
+    element.classList.remove("fadein");
+    element.classList.add("fadeout3");    
+ } 
+ if (document.body.scrollTop > 1600|| document.documentElement.scrollTop > 1600) {   
+  } 
+  else {  
+ }
+ //Eliminando los botones para luego hacer aprecer el correcto que seria el INCORRECTO- 
+ // Hacemos aparcer el boton INCORRECTO-
+ if (document.body.scrollTop > 1800 || document.documentElement.scrollTop > 1800) {
+    document.getElementById("mensaje").innerHTML = "Debes contestar para poder ir al juego.";
+    var element = document.getElementById("lostruefalse");    
+    element.classList.add("nop");     
+    var element = document.getElementById("yacasiestamos");    
+    element.classList.remove("nop");
+    var element = document.getElementById("feed1");    
+    element.classList.add("nop");
+    var element = document.getElementById("jugar2");    
+    element.classList.add("uop");
+    document.getElementById("titulox2").innerHTML = "¡Ahora si! !Vamos a ello!.";
+  } 
+  else {
+    document.getElementById("mensaje").innerHTML = "¡Vamos, seguro la sabes!.";
+    var element = document.getElementById("lostruefalse");    
+    element.classList.remove("nop");
+    element.classList.add("fadein");
+    var element = document.getElementById("yacasiestamos");    
+    element.classList.add("nop");
+    element.classList.add("fadein");
+    var element = document.getElementById("jugar2");    
+    element.classList.remove("uop");
+    document.getElementById("titulox2").innerHTML = "El excremento de los no presenta un peligro para los seres humanos.";
+
+ }
+ if (document.body.scrollTop > 2100 || document.documentElement.scrollTop > 2100) {
+   var element = document.getElementById("jugar2");
+   element.classList.remove("uop");    
+    element.classList.add("jugar2");    
+  } 
+  else {
+    var element = document.getElementById("jugar2");
+   element.classList.add("uop");    
+    element.classList.remove("jugar2");    
+ }
+  } 
+</script>
+</html>

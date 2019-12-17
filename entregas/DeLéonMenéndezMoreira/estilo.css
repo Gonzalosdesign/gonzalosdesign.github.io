@@ -1,0 +1,161 @@
+* {box-sizing: border-box;}
+
+.row::after {content: ""; clear: both; display: table;}
+
+[class*="col-"] {float: left; padding: 15px;}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+@media only screen and (max-width: 768px){
+  /*For mobile phones:*/
+  [class*="col-"] {
+    width: 100%;
+}
+}
+
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #F5DA81;
+	color:#000000;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 20pt;
+
+}
+
+img {
+ 
+  height: auto;
+}
+
+
+h3 {
+	padding-top: 3%;
+	padding-bottom: 0px;
+	padding-right: 8%;
+	padding-left: 16%;
+	margin: 3%;
+}
+
+h4 { 
+	padding-top: 1%; 
+	padding-bottom: 0px;
+	padding-right: 10%; 
+	padding-left: 35%;
+	margin: 3%;
+
+}
+
+
+.button {
+ 	font-size: 10pt;
+ 	margin-top: 20px;
+ 	padding-top: 9px;
+ 	padding-bottom: 9px;
+ 	padding-right: 10px;
+ 	padding-left: 10px;
+ 	border-radius: 12px; 
+ 	background-color:#FE2E2E;
+ 	font-weight: bold;
+ 	color: #F3E2A9;
+ 	margin-left: 80%;
+text-decoration: none;
+
+
+
+ 	
+}
+
+.button:hover {
+		background-color: transparent; 
+		color: #FE2E2E;
+		cursor: pointer;
+		
+}
+
+
+.padding1 {
+	padding: 5%;
+	padding-left: 21%;
+	padding-right: 10%;
+	padding-bottom: 5%;
+}
+
+.padding2 {
+	padding: 5%;
+	padding-left: 5%;
+	padding-right: 21%;
+	padding-bottom: 5%;
+
+}
+
+.padding3 {
+	padding: 10%;
+	padding-right: 30%;
+	padding-left: 15%;
+	padding-bottom: 10%;
+
+}
+
+
+
+
+
+#objeto {
+	padding: 1%;
+	padding-left: 40%;
+	padding-right: 20%;
+	width: 50%;
+	height: 50%;
+	position: relative;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  text-align: center;
+	}
+	   /* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+0%   { left:0px; top:0px;}
+  75%  {left:0px; top:200px;}
+  100% {left:0px; top:0px;}
+}
+
+}
+#objeto2 {
+	
+	width: 50%;
+	height: 50%;
+	position: absolute;
+  -webkit-animation: mymove 5s linear; /* Safari 4.0 - 8.0 */
+  animation: mymove 5s linear;
+}
+
+.shake-horizontal:hover {
+	position: relative;
+	right: 3%;
+	left: 3%;
+}
+
+
+ 
+
+
+
+
+
+

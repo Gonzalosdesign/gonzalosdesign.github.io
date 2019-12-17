@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Crete+Round|Ropa+Sans&display=swap');
+
+
+/* font-family: 'Ropa Sans', sans-serif;
+font-family: 'Crete Round', serif; */
+
+.row::after {content: ""; clear: both; display: table;}
+[class*="col-"] {float: left;}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66}
+.col-10 {width: 83.33%;}
+.col-9 {width: 75%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+* {box-sizing: border-box;
+}
+img { width: 100%;
+}
+
+/*Adaptable para celular__________________________________________*/
+@media only screen and (max-width: 768px) {
+	[class*="col-"] {
+    width: 100%; 
+    }
+}
+
+body, html{ font-family: 'Ropa Sans', sans-serif; 
+            overflow: hidden; /*eliminar barra de scroll*/
+}
+
+a { text-decoration: none;
+    color: black;
+}
+
+/*ALINEACIÓN DEL CONTENIDO ________________________________________________________________________________*/
+.video1 { text-align: center;
+}
+/* centrado fondo index.html*/
+.fondo1{
+    background-image: url(img/Fondo1.jpg);
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 600px;
+    margin:0 auto;
+}
+/* centrado fondo situacion2.html*/
+.fondo2{
+    background-image: url(img/Fondo2.jpg);
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 600px;
+    margin:0 auto;
+}
+/* centrado fondo situacion3.html*/
+.fondo3{
+    background-image: url(img/Fondo3.jpg);
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 600px;
+    margin:0 auto;
+}
+/* centrado fondo situacion4.html*/
+.fondo4{
+    background-image: url(img/Fondo4.jpg);
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 600px;
+    margin:0 auto;
+}
+/*centrado de botones index.html________________*/
+.centrado1 {
+width: 200px;
+margin: 0 auto;
+padding-top: 250px;
+}
+/*centrado de botones situaciones*/
+.centrado2 {
+margin: 0 auto;
+padding-top: 540px;
+padding-left: 430px;
+}
+/*centrado de botones Formularios*/
+.aform { padding: 1% 20%;
+         margin: 0% 3%;
+         text-align: center; 
+}
+.bform { padding: 0% 15%;
+         margin: 0% auto;
+         text-align: center;
+}
+.cform { padding: 1% 0%; margin: 0% 25%; text-align: center;
+}
+.cformc { padding: 0% 10%; }
+.dform{ text-align: center; padding: 0 30%;
+}
+/*centrado de botones respuestas correctas*/
+/*centrado de botones respuestas incorrectas*/
+.correcto { text-align: center;
+}
+.centroabajo { text-align: center;
+               padding: 0px 300px;
+}
+/*ATRIBUTOS DEL FORMULARIO DE PREGUNTAS _____________________________________________________________
+intentamos colocar background-color: white; opacity:0.9; pero se aplicaba a todo el div */
+p {font-family: 'Crete Round', serif;
+   text-align: justify;
+   font-size: 13pt;
+   padding: 0px 25%;
+}
+p span { font-size: 13pt;
+         color: #FFA200;
+}
+h2,h3,h4 { font-family: 'Ropa Sans', sans-serif;
+	       font-size: 21pt;
+           text-align: center;
+           padding-top: 80px; 
+}
+h2 span { font-size: 13pt;
+          color: #FFA200;
+}
+h4 {font-size: 28pt; 
+}
+h5 {font-size: 18pt;
+    text-align: center;
+    padding-top: 2%; 
+    color: #FFA200;
+}
+h1{ font-family: 'Ropa Sans', sans-serif;
+    font-size: 10pt;
+ }
+button { text-decoration: none;
+	     justify-content: center;
+	     background-color: #FFE700;
+         border: 2px solid #FFE700;
+	     border-radius: 8px;
+	     padding: 2% 12%;
+         margin: 2% 3%;  
+         font-family: 'Crete Round', serif;
+         font-size: 13pt;
+}
+button:hover { border: 2px solid #FFA200; 
+	           background-color: #FFA200;
+}
+/*Translaciones ___________________________________________________________________________*/
+/* Situación 2 - celular */
+/* FALTA ACHICAR EL TAMAÑO DEL CELULAR___________________________________LEER */
+.celular {  
+}
+  
+#celular:hover .move-up {
+    transform: translate(0,-40%);
+    -webkit-transform: translate(0,-40%);
+    -o-transform: translate(0,-40%); 
+    -moz-transform: translate(0,-40%);
+}
+
+/* Situación 3 - mujer */
+.van {
+    height: 50%;
+    width: auto; 
+    top: 3%;
+    left: 23%;
+}
+
+#mujer:hover .move-right{
+    transform: translate(70%,0);
+    -webkit-transform: translate(70%,0); /* Chrome & Safari */
+    -o-transform: translate(70%,0); /* Opera */
+    -moz-transform: translate(70%,0); /* Firefox */
+}
+/* Situación 4 - auto de la derecha */
+.posicion { 
+            height: auto;
+            width: 25%;
+            left: 48%;
+            position: fixed;
+            top: 16%;
+}
+#auto:hover .move-left {
+    transform: translate(-40%,0);
+    -webkit-transform: translate(-40%,0); /** Safari & Chrome **/
+    -o-transform: translate(-40%,0); /** Opera **/
+    -moz-transform: translate(-40%,0); /** Firefox **/
+}
+/* Aplicable a todos los objetos */
+.object {
+    position: absolute;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out; /* Chrome & Safari */
+    -moz-transition: all 1s ease-in-out; /* Firefox */
+    -o-transition: all 1s ease-in-out; /* Opera */
+}
+/* Página de información */
+p .carousel {
+  margin: 0.1;
+}
+.carousel {
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 100px 0;
+    position: relative;
+    width: 100vw;
+}
+
+.carousel > .container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+    transition: transform 600ms;
+}
+
+.carousel > nav {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    z-index: 1;
+}
+
+.carousel > nav a {
+    color: #FFA200;
+    font-size: 30px;
+    opacity: .2;
+    text-decoration: none;
+}
+
+.carousel > nav a:hover {
+    opacity: .5;
+}
+
+.carousel > nav a.current {
+    opacity: 1;
+}
+
+.carousel .slide {
+    flex-shrink: 0;
+    line-height: 1.4;
+    text-align: center;
+    width: 100vw;
+    background-color: #FFE700;
+}

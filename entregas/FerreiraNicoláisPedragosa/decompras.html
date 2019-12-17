@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <title>De Compras</title>
+	</head>
+	<body>
+
+<div class="container" id="deCompras" >
+ <div class="row">
+   <!-- CONTENIDO -->
+   <div class="gondola" >
+<div class="col-120" > 
+    <!-- PROD 01 -->
+   <div class="col-3"> 
+       <div class="prod0">
+         <img src="images/prod/CervezaC.png" class="prod" id="CervezaC" onclick="changeImage01()">
+         <span class="prodtext">¿Comparaste los precios?</span>
+      </div>
+   </div>
+    <!-- PROD 02 -->
+   <div class="col-3">
+            <center>        	
+               <a href="#popup01" class="popup-link"><img src="images/prod/Cerveza.png" class="prod"></a>
+            </center>
+         <div class="modal-wrapper" id="popup01">
+         <div class="popup-contenedor">
+             <h3>LO SENTIMOS</h3>
+                <p>Sabemos que este alimento es más amigable a tu bolsillo, pero no puedes consumirlo, contiene TACC.</p>
+             <a class="popup-cerrar" href="#">X</a>
+         </div>
+         </div> 
+   </div>
+    <!-- PROD 03 -->
+    <div class="col-3"> 
+         <center>         
+            <a href="#popup02" class="popup-link"><img src="images/prod/Harina.png" class="prod" ></a>
+         </center>
+         <div class="modal-wrapper" id="popup02">
+         <div class="popup-contenedor">
+               <h3>LO SENTIMOS</h3>
+               <p>Sabemos que este alimento es más amigable a tu bolsillo, pero no puedes consumirlo, contiene TACC.</p>
+               <a class="popup-cerrar" href="#">X</a>
+         </div>
+         </div>
+   </div>
+
+    <!-- PROD 04 -->
+   <div class="col-3">
+    <div class="prod0">
+         <img src="images/prod/HarinaC.png" class="prod" id="HarinaC" onclick="changeImage03()">
+         <span class="prodtext">Esta bastante caro ... ¿no?</span>
+    </div>     
+   </div>
+
+</div>
+</div>
+
+   <div class="gondola">
+<div class="col-120" >
+    <!-- PROD 05 -->
+       <div class="col-3">
+    <div class="prod0">
+         <img src="images/prod/MaizenaC.png" class="prod" id="MaizenaC" onclick="changeImage02()">
+         <span class="prodtext">¿No era más barato esto?</span>
+    </div>
+   </div>
+    <!-- PROD 06 -->
+   <div class="col-3"> 
+         <center>        	
+            <a href="#popup03" class="popup-link"><img src="images/prod/Fideos.png" class="prod" ></a>
+         </center>
+        <div class="modal-wrapper" id="popup03">
+        <div class="popup-contenedor">
+          <h3>LO SENTIMOS</h3>
+          <p>Sabemos que este alimento es más amigable a tu bolsillo, pero no puedes consumirlo, contiene TACC.</p>
+          <a class="popup-cerrar" href="#">X</a>
+        </div>
+        </div>
+   </div>
+    <!-- PROD 07 -->
+   <div class="col-3">
+      <div class="prod0">
+         <img src="images/prod/FideosC.png" class="prod"  id="FideosC" onclick="changeImage04()">
+         <span class="prodtext">250g y mirá ese precio ... </span>
+      </div>   
+   </div>      
+    <!-- PROD 08 -->
+   <div class="col-3">
+       <div class="prod0">
+         <img src="images/prod/GalletasC.png" class="prod"  id="GalletasC" onclick="changeImage05()">
+         <span class="prodtext">Bridge traen casi el triple</span>
+       </div>
+   </div>
+</div>   
+</div>
+
+
+   <div class="gondola">
+<div class="col-120"> 
+    <!-- PROD 09 -->
+   <div class="col-3">   
+         <center>         
+            <a href="#popup04" class="popup-link"><img src="images/prod/Snack.png" class="prod" ></a>
+         </center>
+        <div class="modal-wrapper" id="popup04">
+        <div class="popup-contenedor">
+          <h3>LO SENTIMOS</h3>
+          <p>Sabemos que este alimento es más amigable a tu bolsillo, pero no puedes consumirlo, contiene TACC.</p>
+          <a class="popup-cerrar" href="#">X</a>
+        </div>
+        </div>
+   </div>
+    <!-- PROD 10  -->
+   <div class="col-3">
+      <div class="prod0">
+         <img src="images/prod/SnackC.png" class="prod"  id="SnackC" onclick="changeImage06()">
+         <span class="prodtext">¿Será que te da el dinero?</span>
+      </div>
+   </div>
+    <!-- PROD 11 -->
+   <div class="col-3">
+    <div class="prod0">
+         <img src="images/prod/TortaC.png" class="prod"  id="TortaC" onclick="changeImage07()">
+         <span class="prodtext">Ni quería bizcochuelo ...</span>
+     </div>     
+   </div>
+    <!-- PROD 12 -->
+    <div class="col-3">   
+         <center>         
+            <a href="#popup05" class="popup-link"><img src="images/prod/Galletas.png" class="prod" ></a>
+         </center>
+        <div class="modal-wrapper" id="popup05">
+        <div class="popup-contenedor">
+          <h3>LO SENTIMOS</h3>
+          <p>Sabemos que este alimento es más amigable a tu bolsillo, pero no puedes consumirlo, contiene TACC.</p>
+          <a class="popup-cerrar" href="#">X</a>
+        </div>
+        </div>
+   </div>
+ </div> 
+</div>
+
+    <!-- BOTON COMPRAR -->
+        <div class="button-container">
+      <a href="mensaje01.html" class="button">COMPRAR</a>
+    </div>
+ </div>
+</div>
+
+<!-- FOOTER -->
+  <div class="col-12" id="footer">
+    <img src="images/logo.png">
+    <h4>Ferreira - Nicolais - Pedragosa</h4>
+    <h5>PAI II | LDCV | 2019</h5>      
+  </div>
+ </div>
+</div>
+			
+    <!-- SCRIPT -->
+<script language="javascript">
+    function changeImage01() {
+        if (document.getElementById("CervezaC").src == "images/prod/CervezaCBN.png") 
+           {document.getElementById("CervezaC").src = "images/prod/CervezaCBN.png";}
+        else 
+        {document.getElementById("CervezaC").src = "images/prod/CervezaCBN.png";}
+                           }
+    function changeImage02() {
+        if (document.getElementById("MaizenaC").src == "images/prod/MaizenaCBN.png") 
+           {document.getElementById("MaizenaC").src = "images/prod/MaizenaCBN.png";}
+        else 
+        {document.getElementById("MaizenaC").src = "images/prod/MaizenaCBN.png";}
+                           }
+    function changeImage03() {
+        if (document.getElementById("HarinaC").src == "images/prod/HarinaCBN.png") 
+           {document.getElementById("HarinaC").src = "images/prod/HarinaCBN.png";}
+        else 
+        {document.getElementById("HarinaC").src = "images/prod/HarinaCBN.png";}
+                           }
+    function changeImage04() {
+        if (document.getElementById("FideosC").src == "images/prod/FideosCBN.png") 
+           {document.getElementById("FideosC").src = "images/prod/FideosCBN.png";}
+        else 
+        {document.getElementById("FideosC").src = "images/prod/FideosCBN.png";}
+                           }
+    function changeImage05() {
+        if (document.getElementById("GalletasC").src == "images/prod/GalletasCBN.png") 
+           {document.getElementById("GalletasC").src = "images/prod/GalletasCBN.png";}
+        else 
+        {document.getElementById("GalletasC").src = "images/prod/GalletasCBN.png";}
+                           }
+    function changeImage06() {
+        if (document.getElementById("SnackC").src == "images/prod/SnackCBN.png") 
+           {document.getElementById("SnackC").src = "images/prod/SnackCBN.png";}
+        else 
+        {document.getElementById("SnackC").src = "images/prod/SnackCBN.png";}
+                           }  
+    function changeImage07() {
+        if (document.getElementById("TortaC").src == "images/prod/TortaCBN.png") 
+           {document.getElementById("TortaC").src = "images/prod/TortaCBN.png";}
+        else 
+        {document.getElementById("TortaC").src = "images/prod/TortaCBN.png";}
+                           }                                            
+</script>
+
+
+
+
+	</body>
+</html>

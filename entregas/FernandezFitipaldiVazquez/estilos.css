@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Alatsi|Sulphur+Point&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+
+
+/* sistema de grilla_______________*/
+* {
+box-sizing: border-box;
+}
+
+.row::after {content: ""; clear: both; display: table;}
+
+[class*="col-"] { 
+  float: left;
+  border: none;
+}
+@media only screen and (min-width: 768px) {
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  font-family: 'Sulphur Point', sans-serif;
+  width: auto;
+  background-image: url('img/manitos.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h3 {
+    text-align: center;
+}
+
+main {
+  display: flex;
+  width: 100%; 
+  margin: 0 auto; 
+}
+
+.margencitobotoninicio {
+  padding: 25% 10% 25% 10%;
+}
+
+.margencitobotoninicio button[type=submit] {
+    background-color: transparent;
+    margin: 8px 0px;
+    color: white;
+    font-size: 40px;
+    font-family: 'Fjalla One', sans-serif;
+    border: none;
+    cursor: pointer;
+    float: left;
+}
+
+.margencitobotoninicio button[type=submit]:hover {
+    font-size: 50px;    
+    color: #cac744;
+
+}
+
+.botonavideo { 
+  padding: 0.3% 20% 5% 36%;
+}
+
+.botonavideo button[type=submit] {
+    background-color: #cac744;
+    margin: 8px 0px;
+    color: white;
+    font-size: 25px;
+    font-family: 'Sulphur Point', sans-serif;
+    border: none;
+    cursor: pointer;
+    float: left;
+    border-radius: 60px;
+
+}
+
+.botonavideo button[type=submit]:hover {
+    background-color: white;    
+    color: #cac744;
+}
+.residuoscaja {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  padding: 90px 10px 10px 90px;
+  margin: 30px 20px 20px 50px;
+}
+
+.compostcaja {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 60px 10px 30px 80px;
+  margin: 30px 50px 20px 20px;
+}
+
+.residuosfoto {
+  width: 50%;
+}
+
+
+.imageninfo {
+  background:"manitos.jpg";
+  background-position: center;  
+}
+
+.video {
+  padding: 5% 5%;
+}
+
+  /* los parentesis rectos no se pueden sacar porque se rompe todo.. hablamos con Marcos y djo que lo dejemos asi y lo veia */
+[].no {
+  margin: 0 auto;
+  width: 300px;
+}
+
+.no:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+#div1 {
+  padding: 5px;
+  border: none;
+}
+
+#bannercompost {
+    height: 615px;
+    background-image: url(img/jardin.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+  #footer {
+    padding: 2% 2% 2% 2%;
+    background-color: #564333;
+    text-align: center;
+    color: white;
+}

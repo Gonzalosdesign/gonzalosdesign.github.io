@@ -1,0 +1,298 @@
+* {box-sizing: border-box;}
+.row::after {content: ""; clear: both; display: table;}
+[class*="col-"] {float: left; padding: 0px;}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px){
+  [class*="col-"] {width: 100%;
+  }
+}
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+img {
+	max-width: 100%;
+	height:auto;
+	}
+	
+a {
+	display: inline-block;
+	max-width: auto;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*Fondo*/
+
+#fondoinicio {
+	background-image: url("img/fondoiniciodown.jpg");
+	height: 600px;
+	background-repeat: no-repeat;
+	background-position: center;
+		
+}
+
+#arriba {
+    background-image: url("img/fondoinicioup.jpg");
+	height: 1200px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;	
+}
+
+#fondo1 {
+	background-image: url("img/fondo.jpg");
+	height: 600px;
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+
+#fondo2 {
+	background-image: url("img/fondo2.jpg");
+	height: 600px;
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+
+#fondo3 {
+	background-image: url("img/fondo3.jpg");
+	height: 600px;
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+
+#fondo4 {
+	background-image: url("img/fondo4down.jpg");
+	height: 600px;
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+
+#fondo5 {
+	background-image: url("img/fondowin.jpg");
+	height: 600px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+/*Grilla*/
+
+.columna {
+	height: 100%;
+}
+
+.fila {
+	height: 10%;
+}
+
+
+
+/*Posicion Perros*/
+
+
+
+
+#tienda1 {
+	position: relative;
+	top:14px;
+	left: 100px;
+}
+
+#tienda2 {
+	position: relative;
+	top:14px;
+	left: 105px;
+}
+
+.casa {
+	position: relative;
+	top:16px;
+	left: 97px;
+}
+
+#feo0 {
+	position: relative;
+	top: 89%;
+	left: 31%;
+}
+
+.feo1 {
+	position: relative;
+	top: 89%;
+	left: 31%;
+}
+
+.feo2 {
+	position: relative;
+	top: 80%;
+	left: 70%;
+}
+
+.feo3 {
+	position: relative;
+	top: 85%;
+	left: 31%;
+}
+
+.feo4 {
+	position: relative;
+	top: 80%;
+	left: 40%;
+}
+
+/*Nubes*/
+
+
+
+#nube1 {
+	position: absolute;
+	opacity: 0.8;
+	animation: cloud 5s;
+}
+
+#nube2 {
+	position: absolute;
+	opacity: 0.8;
+	animation: clouddos 5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+#nube3 {
+	position: absolute;
+	opacity: 0.8;
+	animation: cloudtres 5s;
+	top:100px;
+}
+
+
+
+@keyframes cloud {
+    0% {
+        left: -700px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+@keyframes clouddos {
+    0% {
+        right:  -700px;
+    }
+    100% {
+        right:  0px; 
+    }
+}
+
+@keyframes cloudtres {
+    0% {
+        left:  -700px;
+    }
+    100% {
+        left:  0px; 
+    }
+
+}
+
+
+/*NubesIndex*/
+
+#nube4 {
+	position: absolute;
+	animation: inicion 5s;
+	animation-timing-function: linear;
+	animation-delay: -2s;
+	animation-direction: reverse;
+	animation-fill-mode: forwards;
+	top:100px;
+	margin-left: 100%;
+	animation-delay:1s;
+	opacity: 0.9;
+	
+}
+
+@keyframes inicion {
+    0% {
+        left:  -2000px;
+    }
+    100% {
+        left:  0px; 
+    }
+
+}
+
+/*Flecha*/
+
+.centrar
+{
+	padding: 26%;
+	margin:20%;
+}
+
+
+/*Volver*/
+
+.volver {
+	position: relative;
+	top:90%;
+	
+	left: 80%;
+}
+
+.volver:hover {
+	opacity: 0.8;
+}
+
+/*Perdiste*/
+
+
+
+#perdiste {
+	position: absolute;
+	opacity: 0.9;
+	animation: perdiste 4s;
+    animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	z-index: 1;
+	top: 20px;
+	
+}
+
+
+
+@keyframes perdiste {
+    0% {
+        right:  -800px;
+    }
+    100% {
+        right:  37px;
+    }
+}
+
+

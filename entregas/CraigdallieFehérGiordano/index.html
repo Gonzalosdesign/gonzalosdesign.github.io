@@ -1,0 +1,65 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Eco-Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+ 
+</head>
+    <body>
+     <div class="fondo">
+      <div class="container inicio">
+          <div class="row">
+              <div class="col-12">
+                  <h1>¿Qué tan comprometide estás con el medio ambiente?</h1>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-12">
+                  <span class="animated bounce"></span>
+              </div>
+          </div>
+          <div class="row funky-animations">
+              <div class="col-12">
+                  <h4><img src="img/hoja.png" alt="" onclick="myFunction()"><br></h4>
+                        <a class="hoja" href="pregunta1.html"><p id="demo"></p></a>
+              </div>
+          </div>
+      </div>  
+      </div>      
+      <script src="jquery.min.js"></script>
+      <script>
+            function myFunction() {
+            document.getElementById("demo").innerHTML = "INICIAR";
+            }
+        </script>
+      <script>
+        $(document).ready(function() {
+          function isScrolledIntoView(elem) {
+            var docViewTop = $(window).scrollTop();
+            var docViewBottom = docViewTop + $(window).height();
+            var elemTop = $(elem).offset().top;
+            var elemBottom = elemTop + $(elem).height();
+            return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+          }
+          $(window).scroll(function() {
+            $('.scroll-animations .animated').each(function() {
+              if (isScrolledIntoView(this) === true) {
+                $(this).addClass('fadeInLeft');
+              }
+            });
+          });
+          $('.funky-animations h4').on('click', function() {
+            $(this).addClass('animated hinge').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+                $(this).removeClass('animated hinge');
+              });
+          });
+        });
+      </script>
+    </body>
+</html>

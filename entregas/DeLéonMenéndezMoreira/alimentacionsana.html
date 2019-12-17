@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<title>Alimentación sana</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+
+
+<head>
+<style>
+#div1, #div2 {
+  float: left;
+  width: 100px;
+  height: 35px;
+  margin: 10px;
+  padding: 10px;
+  
+}
+</style>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+
+
+
+</script>
+</head>
+<body>
+
+
+<div class="sano">
+
+  <div class="col-4">
+    
+  <div class="row">
+    <div class="col-2 padding3" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="img/sano.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31"></div>
+
+    <div class="col-2 padding3" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="img/sano12.png" draggable="true" ondragstart="drag(event)" id="drag12" width="88" height="31"></div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="col-2 padding3" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="img/sano02.png" draggable="true" ondragstart="drag(event)" id="drag2" width="88" height="31"></div>
+
+    <div class="col-2 padding3" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="img/sano03.png" draggable="true" ondragstart="drag(event)" id="drag3" width="88" height="31"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-2 padding3" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="img/sano08.png" draggable="true" ondragstart="drag(event)" id="drag8" width="88" height="31"></div>
+
+    <div class="col-2 padding3" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="img/sano09.png" draggable="true" ondragstart="drag(event)" id="drag9" width="88" height="31"></div>
+  </div>
+
+</div>
+
+<div class="col-4">
+    
+  <div class="row">
+    <div class="col-4 padding3" ondrop="drop(event)" ondragover="allowDrop(event)"> <img src="img/niña1.png"></div>
+  </div>
+</div>
+
+<div class="col-4">
+    
+  <div class="row">
+    <div class="col-2 padding3" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="img/sano11.png" draggable="true" ondragstart="drag(event)" id="drag11" width="88" height="31"></div>
+
+    <div class="col-2 padding3" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="img/sano10.png" draggable="true" ondragstart="drag(event)" id="drag10" width="88" height="31"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-2 padding3" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="img/sano13.png" draggable="true" ondragstart="drag(event)" id="drag13" width="88" height="31"></div>
+
+    <div class="col-2 padding3" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="img/sano14.png" draggable="true" ondragstart="drag(event)" id="drag14" width="88" height="31"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-2 padding3" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="img/sano06.png" draggable="true" ondragstart="drag(event)" id="drag6" width="88" height="31"></div>
+
+    <div class="col-2 padding3" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="img/sano07.png" draggable="true" ondragstart="drag(event)" id="drag7" width="88" height="31"></div>
+  </div>
+
+</div>
+</div>
+
+ <!--dice que si-->
+  <div class="col-12">
+    <a href="siguiente2.html" class="button">Siguiente</a>
+  </div>
+
+  </div>
+
+
+
+
+
+
+
+
+</body>
+</html>
