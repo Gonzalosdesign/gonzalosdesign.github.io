@@ -293,17 +293,43 @@ h1 {
 
 .gallery {
   background: rgba(10, 10, 10, 0.6);
+  position: relative;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: rgba(10, 10, 10, 0.6);
+}
+
+.gallery:hover .overlay {
+  opacity: 1;
+}
+
+.text {
   color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
-.gallery p {
-  padding: 3%;
-  text-align: center;
-}
-
-.gallery:hover {
-  background-color: black;
-}
 
 /*MOBILE FIRST*/
 
@@ -359,8 +385,9 @@ div.gallery img {
 .rezising {
   padding: 0 6px;
   margin-top: 1%;
+  width: 25%;
   float: left;
-  width: 24.99999%;
+  
 }
 
 @media only screen and (max-width: 700px) {
