@@ -4,26 +4,35 @@ body {
 }
 
 h1 {
-	padding-top: 10px;
-	font-size: 96px;
+	margin: 10%;
+	padding: 10%;
+	font-size: 36px;
 	color: #3BBF8F;
+	background-color: #022619;
+	box-shadow: -10px 10px; 
 }
 
 h4 {
-	font-size: 48px;
+	font-size: 24px;
 	color: #3BBF8F;
+	margin: 10%;
 }
 
 p {
 	font-family: 'Roboto Mono', monospace;
 	font-weight: bold;
 	color: white;
-	font-size: 28px;
+	font-size: 14px;
+	margin: 10%;
 }
 
 div {
 	margin: auto;
 	/*border: solid red 1px;*/
+}
+
+.botonera {
+	margin: 10%;
 }
 
 .btn-primary {
@@ -41,13 +50,15 @@ div {
 .status {
 	margin-top: 40px;
 	background-color: #022619;
-	box-shadow: 10px 10px;
+	box-shadow: -10px 10px;
+	margin: 10%;
 }
 
 .dice {
 	margin-top: 40px;
 	background-color: #022619;
-	box-shadow: 10px 10px;
+	box-shadow: -10px 10px;
+	margin: 10%;
 }
 
 /*
