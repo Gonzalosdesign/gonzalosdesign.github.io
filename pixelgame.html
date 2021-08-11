@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pixelgame</title>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!--Fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+
+    <style>
+    	body {
+    		background: linear-gradient(#112226, #0C3B40);
+    		background-repeat: no-repeat;
+    		font-family: 'Press Start 2P', cursive;
+    		background-size: 1920px 1080px;
+    	}
+    	h1{
+    		color: #F25E6B;
+    	}
+    	h4 {
+    		color: #73363B;
+    	}
+    	h3 {
+    		color: #A9BF5A;
+    	}
+    	.encabezado{
+    		margin: 5%;
+    		text-align: center;
+    	}
+    	img {
+    		width: 300px;
+    		margin: 2%; 
+    		height: auto;
+    		opacity: 0.3;
+    	}
+    	img:hover{
+    		opacity: 1;
+    	}
+    	.imagenes h4 {
+    		margin: 5%; 		
+    	}
+    	.divisores {
+    		width: 33.3%;
+    		float: left;
+    		text-align: center;
+    	}
+    	.resultado {
+    		margin: auto;
+    		height: 100px;
+    		text-align: center;
+    	}
+    </style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="encabezado">
+			<h1>Piedra, papél o tijera</h1>
+		</div>
+		<div class="imagenes">
+			<h4 class="text-center">Elegí una opción</h4>
+			<div class="divisores">
+				<img src="img/stone.png" onclick="piedra()" type="button">
+			</div>
+			<div class="divisores">
+				<img src="img/papel.png" onclick="papel()" type="button">
+			</div>
+			<div class="divisores">
+				<img src="img/tijera.png" onclick="tijera()" type="button">
+			</div>
+		</div>
+		<div class="resultado">
+			<h3 id="backlog"></h3>
+		</div>
+	</div>
+	<script>
+		function papel() {
+			let playersChoice = 0;
+			console.log("papel");
+			//This is an exercise in my journey to learn javascript
+			//im gonna try to make a simple "Rock paper scissors" game on html
+
+
+			//setting the CPU choice
+			let cpuChoice = Math.floor(Math.random() * (3 - 0));
+			console.log(cpuChoice);
+
+			/*Asignacion
+
+			papel = 0
+			tijera = 1
+			pidra = 2
+			*/
+
+			//Los dos eligen lo mismo
+			if (playersChoice == cpuChoice) {
+			    console.log("Empate, ambos eligieron lo mismo.");
+			    document.getElementById('backlog').innerHTML = "Empate, ambos eligieron lo mismo.";
+			}
+
+			//jugador elige papel
+			if (playersChoice == 0 && cpuChoice == 1 ) {
+			    console.log("El jugador eligió Papél y la computadora eligió Tijera. La computadora gana");
+			 document.getElementById('backlog').innerHTML = "El jugador eligió Papél y la computadora eligió Tijera. La computadora gana";   
+			}
+			if (playersChoice == 0 && cpuChoice == 2 ) {
+			    console.log("El jugador eligió Papél y la computadora eligió Piedra. El jugador gana");
+			    document.getElementById('backlog').innerHTML = "El jugador eligió Papél y la computadora eligió Piedra. El jugador gana";
+			}
+
+			//jugador elige tijera
+			if (playersChoice == 1 && cpuChoice == 0 ) {
+			    console.log("El jugador eligió Tijera y la computadora eligió Papél. El jugador gana");
+			    document.getElementById('backlog').innerHTML = "El jugador eligió Tijera y la computadora eligió Papél. El jugador gana";
+			}
+			if (playersChoice == 1 && cpuChoice == 2 ) {
+			    console.log("El jugador eligió Tijera y la computadora eligió Piedra. La computadora gana");
+			    document.getElementById('backlog').innerHTML = "El jugador eligió Tijera y la computadora eligió Piedra. La computadora gana";
+			}
+
+			//jugador elige Piedra
+			if (playersChoice == 2 && cpuChoice == 0 ) {
+			    console.log("El jugador eligió Piedra y la computadora eligió Papél. La computadora gana");
+			    document.getElementById('backlog').innerHTML = "El jugador eligió Piedra y la computadora eligió Papél. La computadora gana";
+			}
+			if (playersChoice == 2 && cpuChoice == 1 ) {
+			    console.log("El jugador eligió Piedra y la computadora eligió Tijera. El jugador gana");
+			    document.getElementById('backlog').innerHTML = "El jugador eligió Piedra y la computadora eligió Tijera. El jugador gana";
+			}
+		}		
+	</script>
+
+	<script>
+		function tijera() {
+			let playersChoice = 1;
+			console.log("tijera");
+			//This is an exercise in my journey to learn javascript
+			//im gonna try to make a simple "Rock paper scissors" game on html
+
+
+			//setting the CPU choice
+			let cpuChoice = Math.floor(Math.random() * (3 - 0));
+			console.log(cpuChoice);
+
+			/*Asignacion
+
+			papel = 0
+			tijera = 1
+			pidra = 2
+			*/
+
+			//Los dos eligen lo mismo
+			if (playersChoice == cpuChoice) {
+			    console.log("Empate, ambos eligieron lo mismo.");
+			    document.getElementById('backlog').innerHTML = "Empate, ambos eligieron lo mismo.";
+			}
+
+			//jugador elige papel
+			if (playersChoice == 0 && cpuChoice == 1 ) {
+			    console.log("El jugador eligió Papél y la computadora eligió Tijera. La computadora gana");
+			 document.getElementById('backlog').innerHTML = "El jugador eligió Papél y la computadora eligió Tijera. La computadora gana";   
+			}
+			if (playersChoice == 0 && cpuChoice == 2 ) {
+			    console.log("El jugador eligió Papél y la computadora eligió Piedra. El jugador gana");
+			    document.getElementById('backlog').innerHTML = "El jugador eligió Papél y la computadora eligió Piedra. El jugador gana";
+			}
+
+			//jugador elige tijera
+			if (playersChoice == 1 && cpuChoice == 0 ) {
+			    console.log("El jugador eligió Tijera y la computadora eligió Papél. El jugador gana");
+			    document.getElementById('backlog').innerHTML = "El jugador eligió Tijera y la computadora eligió Papél. El jugador gana";
+			}
+			if (playersChoice == 1 && cpuChoice == 2 ) {
+			    console.log("El jugador eligió Tijera y la computadora eligió Piedra. La computadora gana");
+			    document.getElementById('backlog').innerHTML = "El jugador eligió Tijera y la computadora eligió Piedra. La computadora gana";
+			}
+
+			//jugador elige Piedra
+			if (playersChoice == 2 && cpuChoice == 0 ) {
+			    console.log("El jugador eligió Piedra y la computadora eligió Papél. La computadora gana");
+			    document.getElementById('backlog').innerHTML = "El jugador eligió Piedra y la computadora eligió Papél. La computadora gana";
+			}
+			if (playersChoice == 2 && cpuChoice == 1 ) {
+			    console.log("El jugador eligió Piedra y la computadora eligió Tijera. El jugador gana");
+			    document.getElementById('backlog').innerHTML = "El jugador eligió Piedra y la computadora eligió Tijera. El jugador gana";
+			}
+		}		
+	</script>
+	<script>
+		function piedra() {
+			let playersChoice = 2;
+			console.log("piedra");
+			//This is an exercise in my journey to learn javascript
+			//im gonna try to make a simple "Rock paper scissors" game on html
+
+
+			//setting the CPU choice
+			let cpuChoice = Math.floor(Math.random() * (3 - 0));
+			console.log(cpuChoice);
+
+			/*Asignacion
+
+			papel = 0
+			tijera = 1
+			pidra = 2
+			*/
+
+			//Los dos eligen lo mismo
+			if (playersChoice == cpuChoice) {
+			    console.log("Empate, ambos eligieron lo mismo.");
+			    document.getElementById('backlog').innerHTML = "Empate, ambos eligieron lo mismo.";
+			}
+
+			//jugador elige papel
+			if (playersChoice == 0 && cpuChoice == 1 ) {
+			    console.log("El jugador eligió Papél y la computadora eligió Tijera. La computadora gana");
+			 document.getElementById('backlog').innerHTML = "El jugador eligió Papél y la computadora eligió Tijera. La computadora gana";   
+			}
+			if (playersChoice == 0 && cpuChoice == 2 ) {
+			    console.log("El jugador eligió Papél y la computadora eligió Piedra. El jugador gana");
+			    document.getElementById('backlog').innerHTML = "El jugador eligió Papél y la computadora eligió Piedra. El jugador gana";
+			}
+
+			//jugador elige tijera
+			if (playersChoice == 1 && cpuChoice == 0 ) {
+			    console.log("El jugador eligió Tijera y la computadora eligió Papél. El jugador gana");
+			    document.getElementById('backlog').innerHTML = "El jugador eligió Tijera y la computadora eligió Papél. El jugador gana";
+			}
+			if (playersChoice == 1 && cpuChoice == 2 ) {
+			    console.log("El jugador eligió Tijera y la computadora eligió Piedra. La computadora gana");
+			    document.getElementById('backlog').innerHTML = "El jugador eligió Tijera y la computadora eligió Piedra. La computadora gana";
+			}
+
+			//jugador elige Piedra
+			if (playersChoice == 2 && cpuChoice == 0 ) {
+			    console.log("El jugador eligió Piedra y la computadora eligió Papél. La computadora gana");
+			    document.getElementById('backlog').innerHTML = "El jugador eligió Piedra y la computadora eligió Papél. La computadora gana";
+			}
+			if (playersChoice == 2 && cpuChoice == 1 ) {
+			    console.log("El jugador eligió Piedra y la computadora eligió Tijera. El jugador gana");
+			    document.getElementById('backlog').innerHTML = "El jugador eligió Piedra y la computadora eligió Tijera. El jugador gana";
+			}
+		}		
+	</script>
+
+</body>
+</html>
