@@ -1,8 +1,0 @@
-En la planificación del proyecto la idea principal era hacer un juego con la lombriz, en el cual se debía agarrar los objetos que iban en la vermicompostera y 
-esquivar los que no iba, mientras se generaba un sistema de puntuación por los objetos seleccionados.
-Debido a que se hizo difícil llevar a cabo esta idea, decidimos cambiarlo por el juego de drag and drop. A su vez, en este juego se nos dificularon
-algunos detalles como el hecho de no poder colocar todos los objetos a la vez dentro de la papelera o la vermicompostera, y que quedaran a la vista. Provocando que cuando se
-coloca un segundo objeto dentro de la caja del drop, desaparece el primero. Al mismo tiempo tampoco desaparecen los objetos que se arrastran, sino que se multiplican.
-Cuando se aprieta el botón de ¨Jugar de nuevo¨, desaparecen las imágenes de papelera y cajón, lo cual no pudimos corregir. Vuelven a aparecer si se recarga la página.
-Probamos diferentes códigos e intentamos combinar pero no logramos que funcionaran.
-La página funciona mejor usando Chrome.
